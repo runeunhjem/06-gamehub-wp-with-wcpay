@@ -1472,6 +1472,11 @@ legend {
   grid-template-areas: "gametitle gametitle gametitle gametitle" "gamecover releasedate releasedate reldate" "gamecover type typeico typetext" "gamecover region regionico regiontext" "gamecover platform platformico platformtext" "gamecover gsrating gsrating rating" "gamecover readreview readreview togglewishlist" "gamecover . . price" "gamecover . . pricebefore";
 }
 
+#wishlist-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .game-details {
   display: grid;
   justify-content: flex-start;
@@ -1502,9 +1507,16 @@ legend {
   display: flex;
   justify-content: flex-end;
 }
-.psnright img, .psnright a {
+.psnright a {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 20px;
+}
+.psnright img {
   width: 20px;
   height: 20px;
+  padding: 0 0 5px 10px;
 }
 
 .psncenter {
@@ -1611,11 +1623,6 @@ legend {
 
 .togglewishlist {
   grid-area: togglewishlist;
-  width: 100%;
-}
-.togglewishlist img {
-  display: flex;
-  justify-content: flex-end;
 }
 .togglewishlist img:hover {
   content: url(../images/ico_heart.svg);
