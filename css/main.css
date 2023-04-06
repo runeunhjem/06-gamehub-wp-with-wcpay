@@ -1475,7 +1475,7 @@ legend {
 .game-details {
   display: grid;
   justify-content: flex-start;
-  grid-template-columns: 160px 70px 30px 80px;
+  grid-template-columns: 160px 70px 30px 70px;
   grid-template-rows: 50px 40px 24px 26px 40px 26px 33px 32px 15px;
   grid-template-areas: "gametitle gametitle gametitle gametitle" "gamecover releasedate releasedate reldate" "gamecover type typeico typetext" "gamecover region regionico regiontext" "gamecover platform platformico platformtext" "gamecover gsrating gsrating rating" "gamecover readreview readreview togglewishlist" "ourprice number . price" ". checkout . pricebefore" ". . . .";
 }

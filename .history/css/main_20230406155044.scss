@@ -1608,8 +1608,8 @@ legend {
 .game-details {
   display: grid;
   justify-content: flex-start;
-  grid-template-columns: 160px 70px 30px 70px;
-  // grid-template-columns: 47% 20.58% 8.82% 23.53%;
+  grid-template-columns: 160px 70px 30px 80px;
+  grid-template-columns: 47% 20% 8% 23%;
   // grid-template-rows: 50px 22px 22px 22px 26px 22px 23px 32px 20px;
   grid-template-rows: 50px 40px 24px 26px 40px 26px 33px 32px 15px;
   grid-template-areas:
