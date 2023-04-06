@@ -30,11 +30,11 @@ setTimeout(() => {
           wishlistIcon.addEventListener("click", function () {
             heartIcon = this.classList.contains("far") ? "images/ico_heart.svg" : "images/ico_heart_+.svg";
             this.src = heartIcon;
-            this.classList.toggle("fas");
             this.classList.toggle("far");
+            this.classList.toggle("fas");
           });
         });
-      }, 600);
+      }, 1000);
 
       // setTimeout(() => {
       //   const wishlistIcons = document.querySelectorAll(".wishlist-icon");
@@ -111,4 +111,4 @@ setTimeout(() => {
     .join("");
 
   featuredContainer.innerHTML = html;
-}, 1200);
+}, 700);

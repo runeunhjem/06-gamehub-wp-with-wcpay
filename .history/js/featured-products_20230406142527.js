@@ -34,7 +34,7 @@ setTimeout(() => {
             this.classList.toggle("far");
           });
         });
-      }, 600);
+      // }, 1000);
 
       // setTimeout(() => {
       //   const wishlistIcons = document.querySelectorAll(".wishlist-icon");

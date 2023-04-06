@@ -30,11 +30,11 @@ setTimeout(() => {
           wishlistIcon.addEventListener("click", function () {
             heartIcon = this.classList.contains("far") ? "images/ico_heart.svg" : "images/ico_heart_+.svg";
             this.src = heartIcon;
-            this.classList.toggle("fas");
             this.classList.toggle("far");
+            this.classList.toggle("fas");
           });
         });
-      }, 600);
+      }, 1000);
 
       // setTimeout(() => {
       //   const wishlistIcons = document.querySelectorAll(".wishlist-icon");
@@ -88,7 +88,7 @@ setTimeout(() => {
         </div>
         <div class="togglewishlist add-to-wishlist">
           <span class="small psnright" href="wishlist.html">
-            <img class="remove small psnright add-to-wishlist wishlist-icon ${ parseInt(game.isWishlisted) === 1 ? "fas" : "far" }" src="${heartIcon}" alt="Add to wishlist" data-id="${parseInt(game.id)}">
+            <img class="remove small psnright add-to-wishlist wishlist-icon ${ game.isWishlisted === 1 ? "fas" : "far" }" src="${heartIcon}" alt="Add to wishlist" data-id="${parseInt(game.id)}">
           </span>
         </div>
         <div class="price psnright">
@@ -111,4 +111,4 @@ setTimeout(() => {
     .join("");
 
   featuredContainer.innerHTML = html;
-}, 1200);
+}, 700);
