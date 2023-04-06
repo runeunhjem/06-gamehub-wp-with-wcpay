@@ -15,7 +15,7 @@ featured.forEach((game) => {
     game.isWishlisted = 1;
   };
 });
-setTimeout(() => {
+
 // Generate the HTML for all the games
 const html = featured
   .map((game) => {

@@ -13,9 +13,9 @@ featured.forEach((game) => {
   if (wishlistedGames.includes(parseInt(game.id))) {
     // If the game is wishlisted, set its isWishlisted value to 1
     game.isWishlisted = 1;
-  };
+  }
 });
-setTimeout(() => {
+
 // Generate the HTML for all the games
 const html = featured
   .map((game) => {
@@ -86,5 +86,5 @@ const html = featured
   })
   .join("");
 featuredContainer.innerHTML = html;
-
-}, 700);
+// setTimeout(() => {
+// }, 700);

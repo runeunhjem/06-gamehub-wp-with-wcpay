@@ -15,7 +15,7 @@ featured.forEach((game) => {
     game.isWishlisted = 1;
   };
 });
-setTimeout(() => {
+
 // Generate the HTML for all the games
 const html = featured
   .map((game) => {
@@ -86,5 +86,5 @@ const html = featured
   })
   .join("");
 featuredContainer.innerHTML = html;
-
-}, 700);
+// setTimeout(() => {
+// }, 700);

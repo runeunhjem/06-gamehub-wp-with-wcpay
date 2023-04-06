@@ -68,6 +68,6 @@ fetch(featuredApiUrl)
   });
 
 // console.log("All games??? after the fetch on featured.js: ", featured);
-// console.log("typeof games after the fetch on featured.js: ", typeof featured);
+console.log("typeof games after the fetch on featured.js: ", typeof featured);
 
 export { featured };

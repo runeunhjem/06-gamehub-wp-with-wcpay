@@ -425,8 +425,7 @@ if (sortAreOnPage) {
     })
     .join("");
 
-    // Set the HTML of the gamesContainer element to the filtered HTML
-    gamesContainer.innerHTML = sortedHtml;
-  });
-};
-
+      // Set the HTML of the gamesContainer element to the filtered HTML
+      gamesContainer.innerHTML = sortedHtml;
+    });
+  };

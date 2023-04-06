@@ -429,4 +429,3 @@ if (sortAreOnPage) {
     gamesContainer.innerHTML = sortedHtml;
   });
 };
-

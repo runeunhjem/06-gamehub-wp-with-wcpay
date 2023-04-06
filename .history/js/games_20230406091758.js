@@ -1,13 +1,13 @@
 // VARIABLES
-const featured = [];
-// const apiUrl = "https://wordpress.runeunhjem.no/wp-json/wc/store/products?per_page=50";
+const games = [];
 // FEATURED API
 const featuredApiUrl = "https://wordpress.runeunhjem.no/wp-json/wc/store/products?featured=true";
+const apiUrl = "https://wordpress.runeunhjem.no/wp-json/wc/store/products?per_page=50";
 let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
-// console.log("wishlist is: ", wishlist);
+console.log("wishlist is: ", wishlist);
 
 // Send a GET request to the API endpoint
-fetch(featuredApiUrl)
+fetch(apiUrl)
   .then((response) => {
     // If the response is successful, parse the JSON data
     if (response.ok) {
@@ -40,24 +40,21 @@ fetch(featuredApiUrl)
         productKeyFeatures: attributes[16].productKeyFeatures,
         featured: parseInt(attributes[17].featured),
       };
-      featured.push(game);
-      // console.log("featured after push(game) is: ", featured);
+      games.push(game);
     }
     if (wishlist.length > 0) {
       // Loop through each item in the wishlist
       wishlist.forEach((game) => {
         // Check if the game is already in the games array
-        const index = featured.findIndex((g) => g.id === game.id);
+        const index = games.findIndex((g) => g.id === game.id);
 
         // If the game is not in the games array, add it
         if (index === -1) {
-          // featured.push(game);
-          // console.log("featured not in wishlistis: ", featured);
+          games.push(game);
         }
         // If the game is already in the games array, replace it
         else {
-          featured[index] = game;
-          // console.log("featured in wishlist is: ", featured);
+          games[index] = game;
         }
       });
     }
@@ -67,7 +64,7 @@ fetch(featuredApiUrl)
     console.error("Error:", error);
   });
 
-// console.log("All games??? after the fetch on featured.js: ", featured);
-// console.log("typeof games after the fetch on featured.js: ", typeof featured);
+console.log("All games??? after the fetch on games.js: ", games);
+console.log("typeof games after the fetch on games.js: ", typeof games);
 
-export { featured };
+export { games };

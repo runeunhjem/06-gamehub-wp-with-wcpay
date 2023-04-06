@@ -4,7 +4,7 @@ const featured = [];
 // FEATURED API
 const featuredApiUrl = "https://wordpress.runeunhjem.no/wp-json/wc/store/products?featured=true";
 let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
-// console.log("wishlist is: ", wishlist);
+console.log("wishlist is: ", wishlist);
 
 // Send a GET request to the API endpoint
 fetch(featuredApiUrl)
@@ -41,7 +41,7 @@ fetch(featuredApiUrl)
         featured: parseInt(attributes[17].featured),
       };
       featured.push(game);
-      // console.log("featured after push(game) is: ", featured);
+      console.log("featured after push(game) is: ", featured);
     }
     if (wishlist.length > 0) {
       // Loop through each item in the wishlist
@@ -52,12 +52,12 @@ fetch(featuredApiUrl)
         // If the game is not in the games array, add it
         if (index === -1) {
           // featured.push(game);
-          // console.log("featured not in wishlistis: ", featured);
+          console.log("featured not in wishlistis: ", featured);
         }
         // If the game is already in the games array, replace it
         else {
           featured[index] = game;
-          // console.log("featured in wishlist is: ", featured);
+          console.log("featured in wishlist is: ", featured);
         }
       });
     }
@@ -67,7 +67,7 @@ fetch(featuredApiUrl)
     console.error("Error:", error);
   });
 
-// console.log("All games??? after the fetch on featured.js: ", featured);
-// console.log("typeof games after the fetch on featured.js: ", typeof featured);
+console.log("All games??? after the fetch on featured.js: ", featured);
+console.log("typeof games after the fetch on featured.js: ", typeof featured);
 
 export { featured };

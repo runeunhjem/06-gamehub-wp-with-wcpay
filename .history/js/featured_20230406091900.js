@@ -52,12 +52,12 @@ fetch(featuredApiUrl)
         // If the game is not in the games array, add it
         if (index === -1) {
           // featured.push(game);
-          // console.log("featured not in wishlistis: ", featured);
+          console.log("featured not in wishlistis: ", featured);
         }
         // If the game is already in the games array, replace it
         else {
           featured[index] = game;
-          // console.log("featured in wishlist is: ", featured);
+          console.log("featured in wishlist is: ", featured);
         }
       });
     }
@@ -67,7 +67,7 @@ fetch(featuredApiUrl)
     console.error("Error:", error);
   });
 
-// console.log("All games??? after the fetch on featured.js: ", featured);
-// console.log("typeof games after the fetch on featured.js: ", typeof featured);
+console.log("All games??? after the fetch on featured.js: ", featured);
+console.log("typeof games after the fetch on featured.js: ", typeof featured);
 
 export { featured };
