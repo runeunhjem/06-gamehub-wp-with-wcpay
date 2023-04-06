@@ -1557,7 +1557,6 @@ legend {
   display: grid;
   justify-content: center;
   grid-template-columns: 160px 62px 42px 76px;
-  // grid-template-columns: 47% 18.2% 12.35% 22.35%;
   grid-template-rows: 76px 38px 24px 26px 38px 28px 33px 38px 15px;
   grid-template-areas:
   'gametitle gametitle gametitle gametitle'
@@ -1576,35 +1575,28 @@ legend {
   // '. . . pricebefore';
 }
 
-#featured-container {
-  .container {
-    height: 380px;
+#featured
+.items {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 160px 62px 42px 76px;
+    grid-template-rows: 76px 38px 24px 26px 38px 28px 33px 38px 15px;
+    grid-template-areas:
+    'gametitle gametitle gametitle gametitle'
+    'gamecover releasedate releasedate reldate'
+    'gamecover type typeico typetext'
+    'gamecover region regionico regiontext'
+    'gamecover platform platformico platformtext'
+    'gamecover gsrating gsrating rating'
+    'gamecover readreview readreview togglewishlist'
+    'gamecover . . price'
+    'gamecover . . pricebefore'
+    // 'gamecover backtogames backtogames backtogames'
+    // 'gamecover useroffers useroffers useroffers'
+    // '. . . .'
+    // 'ourprice number number price'
+    // '. . . pricebefore';
   }
-  .container:hover {
-    transform: scale(1.0);
-  }
-  .items {
-      display: grid;
-      justify-content: center;
-      grid-template-columns: 47% 18.2% 12.35% 22.35%;
-      grid-template-rows: 76px 38px 24px 26px 38px 28px 33px 38px 15px;
-      grid-template-areas:
-      'gametitle gametitle gametitle gametitle'
-      'gamecover releasedate releasedate reldate'
-      'gamecover type typeico typetext'
-      'gamecover region regionico regiontext'
-      'gamecover platform platformico platformtext'
-      'gamecover gsrating gsrating rating'
-      'gamecover readreview readreview togglewishlist'
-      'gamecover . . price'
-      'gamecover . . pricebefore'
-      // 'gamecover backtogames backtogames backtogames'
-      // 'gamecover useroffers useroffers useroffers'
-      // '. . . .'
-      // 'ourprice number number price'
-      // '. . . pricebefore';
-    }
-}
 .game-details {
   display: grid;
   justify-content: flex-start;
