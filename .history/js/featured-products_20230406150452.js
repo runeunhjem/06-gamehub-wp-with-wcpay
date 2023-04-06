@@ -23,9 +23,11 @@ setTimeout(() => {
       let heartIcon = parseInt(game.isWishlisted) === 1 ? "images/ico_heart.svg" : "images/ico_heart_+.svg";
       const typeIcon = game.type === "Key" ? "images/ico_key.svg" : "images/ico_disc.svg";
 
+      // console.log("game.isWishlisted 1 is: ", game.isWishlisted);
       setTimeout(() => {
         const wishlistIcons = document.querySelectorAll(".wishlist-icon");
         console.log("wishlistIcons.length is: ", wishlistIcons.length);
+        // console.log("game.isWishlisted 2 is: ", game.isWishlisted);
         wishlistIcons.forEach(function (wishlistIcon) {
           wishlistIcon.addEventListener("click", function () {
             heartIcon = this.classList.contains("far") ? "images/ico_heart.svg" : "images/ico_heart_+.svg";
@@ -34,6 +36,7 @@ setTimeout(() => {
             this.classList.toggle("far");
           });
         });
+
       }, 600);
 
       return `
