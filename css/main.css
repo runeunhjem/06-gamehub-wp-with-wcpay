@@ -1606,9 +1606,6 @@ legend {
 .togglewishlist img:hover {
   content: url(../images/ico_heart.svg);
 }
-.togglewishlist .remove:hover {
-  content: url(../images/ico_heart_-.svg);
-}
 
 .ourprice {
   grid-area: ourprice;
