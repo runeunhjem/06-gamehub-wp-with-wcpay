@@ -81,7 +81,7 @@ setTimeout(() => {
       </div>
       <div class="togglewishlist add-to-wishlist">
         <span class="small psnright">
-          <img class="remove small psnright add-to-wishlist wishlist-icon ${ parseInt(isWishlisted) === 1 ? "fas" : "far" }" src="${heartIcon}" alt="Add to wishlist" data-id="${parseInt(game.id)}">
+          <img class="remove small psnright add-to-wishlist wishlist-icon ${ parseint(isWishlisted === 1 ? "fas" : "far" }" src="${heartIcon}" alt="Add to wishlist" data-id="${parseInt(game.id)}">
         </span>
       </div>
       <div class="price psnright">
