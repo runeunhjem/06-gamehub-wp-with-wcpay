@@ -1627,12 +1627,11 @@ legend {
   'gamecover readreview readreview togglewishlist'
   'ourprice number . price'
   '. checkout . pricebefore'
-  '. . . .';
+  '. . . .'
   // 'gamecover backtogames backtogames backtogames'
   // 'gamecover useroffers useroffers useroffers'
   // '. . . .'
   // '. . . pricebefore';
-  align-items: center;
 }
 .small {
   font-size: 0.8rem;
@@ -1654,12 +1653,11 @@ legend {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  span {
+  a {
     display: flex;
     justify-content: flex-end;
     width: 100%;
     height: 20px;
-    // padding: 10px;
   }
   img {
     width: 20px;
@@ -1762,7 +1760,6 @@ legend {
   grid-area: readreview;
 }
 .togglewishlist {
-  // padding: 5px;
   grid-area: togglewishlist;
   // width: 100%;
   // img {

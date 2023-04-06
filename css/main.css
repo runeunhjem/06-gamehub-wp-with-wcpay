@@ -1483,6 +1483,7 @@ legend {
   grid-template-columns: 150px 60px 30px 75px;
   grid-template-rows: 50px 40px 24px 26px 40px 26px 33px 32px 15px;
   grid-template-areas: "gametitle gametitle gametitle gametitle" "gamecover releasedate releasedate reldate" "gamecover type typeico typetext" "gamecover region regionico regiontext" "gamecover platform platformico platformtext" "gamecover gsrating gsrating rating" "gamecover readreview readreview togglewishlist" "ourprice number . price" ". checkout . pricebefore" ". . . .";
+  align-items: center;
 }
 
 .small {
@@ -1507,7 +1508,7 @@ legend {
   display: flex;
   justify-content: flex-end;
 }
-.psnright a {
+.psnright span {
   display: flex;
   justify-content: flex-end;
   width: 100%;
@@ -1516,7 +1517,6 @@ legend {
 .psnright img {
   width: 20px;
   height: 20px;
-  padding: 0 0 5px 10px;
 }
 
 .psncenter {
