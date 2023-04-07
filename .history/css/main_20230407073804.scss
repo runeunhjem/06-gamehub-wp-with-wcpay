@@ -1522,7 +1522,7 @@ legend {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-  padding: 1em auto;
+  // padding: 1em auto;
 }
 .container {
   background-color: var(--color-black-90);
@@ -1746,7 +1746,7 @@ legend {
 }
 .platform-text {
   grid-area: platformtext;
-  white-space: nowrap;
+  white
 }
 .useroffers {
   grid-area: useroffers;
