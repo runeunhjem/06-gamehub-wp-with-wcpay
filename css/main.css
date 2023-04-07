@@ -1427,7 +1427,7 @@ legend {
   border-radius: var(--border-radius-boxes);
   min-height: 390px;
   margin: 0.5em;
-  padding: 0.5em 1em 1em 1em;
+  padding: 0.5em 1em 2em 1em;
   transition: all 0.3s;
 }
 
@@ -1440,7 +1440,7 @@ legend {
 }
 
 .details-section .container {
-  height: 380px;
+  min-height: 380px;
 }
 .details-section .container:hover {
   transform: scale(1);
@@ -1460,7 +1460,7 @@ legend {
 }
 
 #featured-container .container {
-  height: 380px;
+  min-height: 380px;
 }
 #featured-container .container:hover {
   transform: scale(1);
