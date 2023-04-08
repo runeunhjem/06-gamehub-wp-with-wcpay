@@ -421,16 +421,14 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 70%;
+    width: 70vw;
     margin-top: 2em;
     img:hover {
       transform: scale(1.5);
     }
   }
   .buy-sell_buttons img {
-    width: 90%;
-    justify-content: center;
-    display: flex;
+    width: 6vw;
     border-radius: 50%;
     transition: all 0.3s;
   }
