@@ -1427,7 +1427,7 @@ legend {
   border-radius: var(--border-radius-boxes);
   min-height: 390px;
   margin: 0.5em;
-  padding: 0.5em 0.7em 1.5em 0.4em;
+  padding: 0.5em 1em 1em 1em;
   transition: all 0.3s;
 }
 
@@ -1454,11 +1454,14 @@ legend {
 .items {
   display: grid;
   justify-content: center;
-  grid-template-columns: 47% 15% 10% 24%;
+  grid-template-columns: 47% 18.2% 12% 24.35%;
   grid-template-rows: 76px 38px 24px 26px 38px 28px 33px 38px 15px;
   grid-template-areas: "gametitle gametitle gametitle gametitle" "gamecover releasedate releasedate reldate" "gamecover type typeico typetext" "gamecover region regionico regiontext" "gamecover platform platformico platformtext" "gamecover gsrating gsrating rating" "gamecover readreview readreview togglewishlist" "gamecover . . price" "gamecover . . pricebefore";
 }
 
+#featured-container {
+  padding-bottom: 1em;
+}
 #featured-container .container {
   min-height: 380px;
 }
@@ -2566,7 +2569,7 @@ a:hover {
   }
   /* PSN-GRID */
   .image-mockup, .psn__wrapper {
-    max-width: 1400px;
+    max-width: 1200px;
   }
 }
 /* @media screensize over 1980px */
@@ -2587,4 +2590,4 @@ a:hover {
     padding-left: 550px;
     justify-content: space-around;
   }
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main_20230407074430.css.map */
