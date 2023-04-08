@@ -1556,9 +1556,9 @@ legend {
 .items {
   display: grid;
   justify-content: center;
-  grid-template-columns: 150px 58px 35px 75px;
+  // grid-template-columns: 160px 62px 42px 76px;
   // grid-template-columns: 47% 18.2% 12% 24.35%;
-  // grid-template-columns: 47% 15% 11% 24%;
+  grid-template-columns: 47% 15% 110% 24%;
   grid-template-rows: 76px 38px 24px 26px 38px 28px 33px 38px 15px;
   grid-template-areas:
   'gametitle gametitle gametitle gametitle'
