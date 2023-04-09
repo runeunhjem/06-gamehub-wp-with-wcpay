@@ -1545,7 +1545,7 @@ legend {
   // width: 360px;
   min-height: 390px;
   margin: 0.5em;
-  padding: 0.5em 0.5em 1.5em 0.5em;
+  padding: 0.5em 0.7em 1.5em 0.4em;
   transition: all 0.3s;
 }
 .container:hover {
@@ -1570,7 +1570,7 @@ legend {
 .items {
   display: grid;
   justify-content: center;
-  grid-template-columns: 160px 58px 35px 78px;
+  grid-template-columns: 150px 58px 35px 75px;
   // grid-template-columns: 47% 18.2% 12% 24.35%;
   // grid-template-columns: 47% 15% 11% 24%;
   grid-template-rows: 76px 38px 24px 26px 38px 28px 33px 38px 15px;
@@ -1897,13 +1897,12 @@ legend {
   margin: 0 auto;
   .share {
     display: block;
-    width: 350px;
+    width: 220px;
     height: 140px;
     background-color: var(--color-black-60);
     justify-content: center;
     align-items: center;
     margin: 3em auto;
-    border-radius: var(--border-radius-boxes);
     p {
       margin: 1em;
     }
@@ -1987,11 +1986,10 @@ legend {
     text-align: center;
   }
 }
-.clear-cart, .clear-wishlist{
+.clear-cart, .clear-wishlist {
   padding: 8px;
   min-width: 160px;
-  width: 350px;
-  // margin-bottom: 0.3em;
+  width: 260px;
   background-color: var(--color-black);
   color: var(--color-yellow-logo);
   border: var(--border-1px-yellow);
@@ -2185,27 +2183,12 @@ legend {
 
 .wishlist-links {
   display: flex;
-  gap: 1em;
-  margin: 1em auto;
   // justify-content: space-between;
   align-items: center;
-  width: 350px;
+  width: 360px;
 }
 .wl-buttons {
-  padding: 8px;
-  margin-top: 1em;
-  min-width: 160px;
-  width: 260px;
-  background-color: var(--color-black);
-  color: var(--color-yellow-logo);
-  border: var(--border-1px-yellow);
-  border-radius: var(--border-radius-boxes);
-  cursor: pointer;
-  text-align: center;
-  a {
-    text-decoration: none;
-    color: var(--color-yellow-logo);
-  }
+  
 }
 .wl-right {
   display: flex;
