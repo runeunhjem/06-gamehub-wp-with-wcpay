@@ -386,7 +386,7 @@ main {
   margin: 2em 0 1em 0;
 }
 .index .buy-sell_buttons img:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 .index .buy-sell_buttons img {
   width: 15vw;
