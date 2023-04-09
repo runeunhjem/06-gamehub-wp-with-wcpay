@@ -128,7 +128,7 @@ footer a {
   width: 160px;
   height: 340px;
   top: 47px;
-  right: 6px;
+  right: 16px;
   margin: 0;
   background-color: var(--color-black-90);
   z-index: 999;
@@ -859,6 +859,7 @@ input {
   grid-template-columns: 200px 1fr;
   padding: 10px;
   width: 90%;
+  min-width: 350px;
   background-color: var(--color-black-90);
   max-width: 600px;
   border: var(--border-1px-yellow);
@@ -884,7 +885,6 @@ input {
 .buy-games__left, .goto-cart {
   display: flex;
   gap: 1.5em;
-  min-width: 350px;
   width: 95vw;
   max-width: 640px;
   padding: 1em 0;
@@ -932,13 +932,17 @@ input {
 
 .profile-links {
   display: inline-flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 1em;
   margin-bottom: 2em;
-  max-width: 100%;
-  width: 70%;
+  min-width: 350px;
+  max-width: 600px;
   gap: 1em;
+}
+.profile-links .buy-games__left, .profile-links .goto-cart {
+  width: 166px;
+  gap: 0;
 }
 
 /* Contact Page */
@@ -1101,7 +1105,11 @@ input {
 
 /* Checkout page */
 .checkout #cvc, .checkout #exp_date, .checkout #cardnumber, .cart #cvc, .cart #exp_date, .cart #cardnumber {
-  width: 250px;
+  width: 100%;
+}
+.checkout .summary, .cart .summary {
+  font-size: calc(1.5rem + 1vw);
+  text-align: center;
 }
 .checkout fieldset, .cart fieldset {
   display: flex;
@@ -1116,6 +1124,7 @@ input {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
   gap: 0.4em;
 }
 .checkout a, .cart a {
@@ -1192,13 +1201,9 @@ legend {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: column;
   gap: 1em;
-}
-
-#creditcard__visa {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  width: 100%;
 }
 
 .paynow-button {
@@ -1264,8 +1269,9 @@ legend {
   align-items: center;
   justify-content: flex-start;
   text-align: center;
-  width: 90%;
+  min-width: 350px;
   max-width: 600px;
+  margin: 1em;
   border: var(--border-1px-yellow);
   border-radius: var(--border-radius-boxes);
   background-color: var(--color-black-60);
@@ -2484,9 +2490,6 @@ a:hover {
   .social-media {
     margin: 1.5em 0;
   }
-  .profile-links {
-    width: 60%;
-  }
   .checkout .checkout__cart, .cart .checkout__cart {
     grid-template-columns: 200px 240px 151px;
   }
@@ -2568,9 +2571,6 @@ a:hover {
   }
   .footer__wrapper, .links, .widescreen {
     display: flex;
-  }
-  .profile-links {
-    width: 50%;
   }
   .contact .divider {
     display: none;

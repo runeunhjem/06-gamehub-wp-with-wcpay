@@ -140,7 +140,7 @@ footer a {
   width: 160px;
   height: 340px;
   top: 47px;
-  right: 16px;
+  right: 6px;
   margin: 0;
   background-color: var(--color-black-90);
   z-index: 999;
@@ -943,7 +943,6 @@ input {
   grid-template-columns: 200px 1fr;
   padding: 10px;
   width: 90%;
-  min-width: 350px;
   background-color: var(--color-black-90);
   max-width: 600px;
   border: var(--border-1px-yellow);
@@ -1021,13 +1020,13 @@ input {
   align-items: center;
   padding: 1em;
   margin-bottom: 2em;
-  min-width: 350px;
-  max-width: 600px;
-  // width: 500px;
+  width: 350px;
+  // max-width: 100%;
+  // width: 70%;
   gap: 1em;
   .buy-games__left, .goto-cart {
-    width: 166px;
-    gap:0;
+    width: 150px;
+    gap:0
   }
 }
 
@@ -1195,11 +1194,7 @@ input {
 /* Checkout page */
 .checkout, .cart {
   #cvc, #exp_date, #cardnumber {
-    width: 100%;
-  }
-  .summary {
-    font-size: calc(1.5rem + 1vw);
-    text-align: center;
+    width: 250px;
   }
   fieldset {
     display: flex;
@@ -1213,7 +1208,6 @@ input {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
     gap: 0.4em;
     }
   }
@@ -1295,15 +1289,13 @@ legend {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
   gap: 1em;
-  width: 100%;
 }
-// #creditcard__visa {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
-// }
+#creditcard__visa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .paynow-button {
   border: 0px;
   margin-top: 1em;
@@ -1368,9 +1360,9 @@ legend {
     align-items: center;
     justify-content: flex-start;
     text-align: center;
-    min-width: 350px;
+    width: 90%;
     max-width: 600px;
-    margin: 1em;
+    // height: 460px;
     border: var(--border-1px-yellow);
     border-radius: var(--border-radius-boxes);
     background-color: var(--color-black-60);
@@ -2677,9 +2669,9 @@ a:hover {
     margin: 1.5em 0;
   }
 
-  // .profile-links {
-  //   width: 60%;
-  // }
+  .profile-links {
+    width: 60%;
+  }
   .checkout, .cart {
     .checkout__cart {
       grid-template-columns: 200px 240px 151px;
@@ -2790,9 +2782,9 @@ a:hover {
     display: flex;
   }
 
-  // .profile-links {
-  //   width: 50%;
-  // }
+  .profile-links {
+    width: 50%;
+  }
   .contact {
     .divider {
       display: none;
