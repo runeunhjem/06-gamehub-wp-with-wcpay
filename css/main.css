@@ -382,14 +382,14 @@ main {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 70%;
+  width: 80%;
   margin-top: 2em;
 }
 .index .buy-sell_buttons img:hover {
   transform: scale(1.5);
 }
 .index .buy-sell_buttons img {
-  width: 90%;
+  width: 10vw;
   justify-content: center;
   display: flex;
   border-radius: 50%;
@@ -1343,12 +1343,13 @@ legend {
 
 #search-field {
   display: flex;
+  min-width: 300px;
+  width: 90vw;
   border: 1px solid var(--color-yellow-logo);
   padding: 0.5em 0 0.6em 0;
   border-radius: var(--border-radius-boxes);
   color: var(--color-white);
   background-color: var(--color-black-60);
-  margin-bottom: 1em;
   flex-wrap: wrap;
 }
 #search-field .filter-section {
@@ -1414,12 +1415,14 @@ legend {
 .weeks-featured {
   display: flex;
   align-items: center;
-  text-align: flex-start;
   justify-content: center;
   min-height: 40px;
+  width: 80%;
 }
 .weeks-featured p {
-  font-size: 5vw;
+  margin: 0 1em;
+  font-size: calc(1.5rem + 4vw); /* Default font size */
+  white-space: nowrap;
   text-align: center;
 }
 
@@ -1427,7 +1430,7 @@ legend {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0 2em;
   padding: 1em auto;
 }
 
@@ -1478,7 +1481,7 @@ legend {
 #featured-container .items {
   display: grid;
   justify-content: center;
-  grid-template-columns: 47% 18.2% 12.35% 22.35%;
+  grid-template-columns: 160px 58px 35px 78px;
   grid-template-rows: 76px 38px 24px 26px 38px 28px 33px 38px 15px;
   grid-template-areas: "gametitle gametitle gametitle gametitle" "gamecover releasedate releasedate reldate" "gamecover type typeico typetext" "gamecover region regionico regiontext" "gamecover platform platformico platformtext" "gamecover gsrating gsrating rating" "gamecover readreview readreview togglewishlist" "gamecover . . price" "gamecover . . pricebefore";
 }
@@ -2444,7 +2447,7 @@ a:hover {
     grid-area: navbar;
   }
   .buy-sell_buttons img {
-    width: 15vw;
+    width: 10vw;
   }
   .cart-buttons {
     width: 200px;
@@ -2601,10 +2604,11 @@ a:hover {
     height: 100%;
   }
   /* PSN-GRID */
-  .image-mockup, .psn__wrapper {
-    max-width: 1400px;
-  }
 }
+.image-mockup, .psn__wrapper {
+  max-width: 1400px;
+}
+
 /* @media screensize over 1980px */
 @media screen and (min-width: 1641px) {
   .header__wrapper-wide {

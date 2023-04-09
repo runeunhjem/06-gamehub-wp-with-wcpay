@@ -423,14 +423,14 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 80%;
+    width: 70%;
     margin-top: 2em;
     img:hover {
       transform: scale(1.5);
     }
   }
   .buy-sell_buttons img {
-    width: 10vw;
+    // width: 95%;
     justify-content: center;
     display: flex;
     border-radius: 50%;
@@ -1609,8 +1609,7 @@ legend {
   .items {
       display: grid;
       justify-content: center;
-      // grid-template-columns: 47% 18.2% 12.35% 22.35%;
-      grid-template-columns: 160px 58px 35px 78px;
+      grid-template-columns: 47% 18.2% 12.35% 22.35%;
       grid-template-rows: 76px 38px 24px 26px 38px 28px 33px 38px 15px;
       grid-template-areas:
       'gametitle gametitle gametitle gametitle'
@@ -2616,7 +2615,7 @@ a:hover {
     }
   }
   .buy-sell_buttons img {
-    width: 10vw;
+    width: 15vw;
   }
 
   .cart-buttons {
