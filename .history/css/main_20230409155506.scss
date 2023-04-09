@@ -424,7 +424,7 @@ main {
     justify-content: space-around;
     align-items: center;
     width: 80%;
-    margin: 2em 0 1em 0;
+    margin-top: 2em;
     img:hover {
       transform: scale(1.5);
     }
@@ -636,14 +636,13 @@ input {
     }
     .quick_buttons {
       display: flex;
-      justify-content: space-between;
-      max-width: 600px;
-      gap: 1em;
+      justify-content: space-around;
+      width: 370px;
       margin-top: 1em;
       margin-bottom: 1.5em;
       a {
         display: flex;
-        width: 167px;
+        width: 128px;
         height: 40px;
         text-decoration: none;
         justify-content: space-evenly;
@@ -668,11 +667,9 @@ input {
   }
   .facebook::before {
     content: url(../images/ico_facebook.svg);
-    height: 21px;
   }
   .google::before {
     content: url(../images/ico_google-chrome.svg);
-    height: 25px;
   }
   a:hover {
     background-color: var(--color-grey-disabled);
@@ -2557,11 +2554,6 @@ a:hover {
 
 /* @media screensize from 769px to 1080px */
 @media screen and (min-width: 769px) {
-  .index {
-    .buy-sell_buttons img {
-    width: 10vw;
-  }
-  }
   .navbar-top {
     right: 15px;
   }
@@ -2750,7 +2742,9 @@ a:hover {
 
 /* @media screensize over 1080px */
 @media screen and (min-width: 1081px) {
-
+  .buy-sell_buttons img {
+    width: 13vw;
+    
   .header__wrapper-wide {
     .explore {
       display: grid;
