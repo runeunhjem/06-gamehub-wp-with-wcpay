@@ -255,7 +255,8 @@ footer a {
   justify-content: space-evenly;
   margin-top: 0px;
   align-items: center;
-  width: 360px;
+  width: 350px;
+  max-width: 360px;
   height: 35px;
   border-radius: 0.5em;
   border: 1px solid var(--color-yellow-logo);
@@ -880,18 +881,22 @@ input {
 
 .buy-games__left, .goto-cart {
   display: flex;
-  gap: 2.5em;
+  gap: 1.5em;
+  min-width: 350px;
+  width: 95vw;
+  max-width: 640px;
   padding: 1em 0;
   color: var(--color-yellow-logo);
   text-decoration: none;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .buy-games__left a, .goto-cart a {
   display: flex;
   align-items: center;
   padding: 4px;
-  width: 160px;
+  min-width: 160px;
+  width: 260px;
   background-color: var(--color-black);
   color: var(--color-yellow-logo);
   border: var(--border-1px-yellow);
@@ -1379,7 +1384,7 @@ legend {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 600px;
+  max-width: 640px;
 }
 
 .psn__wrapper_wide, .detail-image {
@@ -1831,7 +1836,8 @@ legend {
 
 .clear-cart, .clear-wishlist {
   padding: 8px;
-  width: 160px;
+  min-width: 160px;
+  width: 260px;
   background-color: var(--color-black);
   color: var(--color-yellow-logo);
   border: var(--border-1px-yellow);
@@ -1885,7 +1891,9 @@ legend {
   justify-content: center;
   text-align: center;
   height: 50px;
-  min-width: 360px;
+  min-width: 350px;
+  width: 95vw;
+  max-width: 640px;
   color: var(--color-yellow-logo);
   background-color: var(--color-black-90);
   border-radius: var(--border-radius-boxes);
@@ -2420,6 +2428,7 @@ a:hover {
   .cart-wrapper {
     flex-wrap: nowrap;
     max-width: 640px;
+    width: 95vw;
   }
   .footer__wrapper {
     flex-direction: row;
@@ -2474,16 +2483,19 @@ a:hover {
   }
   .cart .buy-games__left, .cart .wl-left, .cart .wl-right, .wishlist .buy-games__left, .wishlist .wl-left, .wishlist .wl-right {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .cart .buy-games__left a, .cart .wl-left a, .cart .wl-right a, .wishlist .buy-games__left a, .wishlist .wl-left a, .wishlist .wl-right a {
     display: flex;
     padding: 4px;
-    width: 160px;
+    width: 260px;
     background-color: var(--color-black);
     color: var(--color-yellow-logo);
     border: var(--border-1px-yellow);
     border-radius: var(--border-radius-boxes);
+  }
+  .cart .buy-games__left button, .cart .wl-left button, .cart .wl-right button, .wishlist .buy-games__left button, .wishlist .wl-left button, .wishlist .wl-right button {
+    width: 260px;
   }
   .cart .cart h1, .wishlist .cart h1 {
     font-size: 3.583rem;
@@ -2498,9 +2510,6 @@ a:hover {
     width: 532px;
   }
   /* PSN-GRID */
-  .image-mockup, .psn__wrapper {
-    max-width: 740px;
-  }
 }
 /* @media screensize over 1080px */
 @media screen and (min-width: 1081px) {

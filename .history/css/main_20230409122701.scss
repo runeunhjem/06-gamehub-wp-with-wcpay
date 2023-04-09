@@ -294,8 +294,7 @@ footer a {
   justify-content: space-evenly;
   margin-top: 0px;
   align-items: center;
-  width: 350px;
-  max-width: 360px;
+  width: 360px;
   height: 35px;
   border-radius: 0.5em;
   border: 1px solid var(--color-yellow-logo);
@@ -958,22 +957,18 @@ input {
 
 .buy-games__left, .goto-cart {
   display: flex;
-  gap: 1.5em;
-  min-width: 350px;
-  width: 95vw;
-  max-width: 640px;
+  gap: 2.5em;
   padding: 1em 0;
   color: var(--color-yellow-logo);
   text-decoration: none;
   align-items: center;
   // width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   a {
     display: flex;
     align-items: center;
     padding: 4px;
-    min-width: 160px;
-    width: 260px;
+    width: 160px;
     background-color: var(--color-black);
     color: var(--color-yellow-logo);
     border: var(--border-1px-yellow);
@@ -1486,7 +1481,7 @@ legend {
   flex-wrap: wrap;
   justify-content: center;
   // gap: 1em;
-  max-width: 640px;
+  max-width: 600px;
 }
 .psn__wrapper_wide, .detail-image {
   display: none;
@@ -1981,8 +1976,7 @@ legend {
 }
 .clear-cart, .clear-wishlist {
   padding: 8px;
-  min-width: 160px;
-  width: 260px;
+  width: 160px;
   background-color: var(--color-black);
   color: var(--color-yellow-logo);
   border: var(--border-1px-yellow);
@@ -2037,9 +2031,8 @@ legend {
   justify-content: center;
   text-align: center;
   height: 50px;
-  min-width: 350px;
+  min-width: 360px;
   width: 95vw;
-  max-width: 640px;
   color: var(--color-yellow-logo);
   background-color: var(--color-black-90);
   border-radius: var(--border-radius-boxes);
@@ -2589,7 +2582,6 @@ a:hover {
   .cart-wrapper {
     flex-wrap: nowrap;
     max-width: 640px;
-    width: 95vw
     // gap: 1em;
   }
   .footer__wrapper {
@@ -2654,19 +2646,16 @@ a:hover {
     .buy-games__left, .wl-left, .wl-right {
       // width: 532px;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       a {
         display: flex;
         // width: 266px;
         padding: 4px;
-        width: 260px;
+        width: 160px;
         background-color: var(--color-black);
         color: var(--color-yellow-logo);
         border: var(--border-1px-yellow);
         border-radius: var(--border-radius-boxes);
-     }
-     button {
-      width: 260px;
      }
     }
     .cart {
@@ -2689,9 +2678,9 @@ a:hover {
     width: 532px;
   }
   /* PSN-GRID */
-  // .image-mockup, .psn__wrapper {
-  //   max-width: 740px;
-  // }
+  .image-mockup, .psn__wrapper {
+    max-width: 740px;
+  }
 }
 
 /* @media screensize over 1080px */
