@@ -826,7 +826,6 @@ input {
   display: grid;
   text-align: right;
   color: var(--color-yellow-logo);
-  padding-right: 5px;
   margin-top: 5px;
 }
 
@@ -1139,7 +1138,7 @@ input {
   white-space: nowrap;
 }
 .checkout .checkout__cart, .cart .checkout__cart {
-  grid-template-columns: 120px 110px 80px;
+  grid-template-columns: 120px 100px 80px;
   grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 40px;
 }
 
@@ -2338,7 +2337,7 @@ a:hover {
     justify-content: space-around;
     align-content: flex-start;
     grid-template-areas: "navbar navbar navbar" "profile__pic profile__name logout" "profile__pic search search";
-    grid-template-columns: 80px 200px 80px;
+    grid-template-columns: 80px 190px 80px;
     grid-template-rows: 45px 35px 30px;
   }
   .header__wrapper-wide .topnav__mob {
@@ -2365,6 +2364,13 @@ a:hover {
 }
 /* @media screensize from 769px to 1080px */
 @media screen and (min-width: 769px) {
+  .navbar-top {
+    right: 15px;
+  }
+  .logout {
+    margin-right: 0.2em;
+    padding-right: 5px;
+  }
   .main-menu {
     grid-area: menu;
     width: 100%;
@@ -2452,7 +2458,7 @@ a:hover {
     width: 60%;
   }
   .checkout .checkout__cart, .cart .checkout__cart {
-    grid-template-columns: 200px 200px 100px;
+    grid-template-columns: 200px 240px 151px;
   }
   .details .psn__wrapper {
     display: none;

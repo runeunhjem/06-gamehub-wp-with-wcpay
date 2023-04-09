@@ -12,19 +12,20 @@
           a.appendChild(r);
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Games, Playstation, PSN, Buy Games, Sell Games, Used Games, New Games, Shopping Cart">
-    <meta name="description" content="Shopping Cart | See what you have added so far">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable=yes>
+    <meta name="keywords" content="Games, Playstation, PSN, Buy Games, Sell Games, Used Games, New Games">
+    <meta name="description" content="All of our playstation games in one place">
     <link rel="stylesheet" href="css/main.css">
     <!-- <link rel="stylesheet" href="css/psnlist.css"> -->
     <link rel="stylesheet" href="css/out-of-view-menu-text.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script defer src="js/script.js" type="module"></script>
-    <script defer src="js/cart.js" type="module"></script>
-    <!-- <script defer src="js/search.js" type="module"></script> -->
-    <title>Game Hub | Shopping Cart</title>
+    <script defer src="js/search.js" type="module"></script>
+
+    <title>Game Hub | Search Results</title>
   </head>
   <body>
     <header>
@@ -56,21 +57,21 @@
                   </div>
                   <div class="links back"><a href="#" class="back-link"><img src="images/ico_chevron-left.svg" alt="Go Back">Back</a></div>
                   <div class="links"><a href="index.html"><img src="images/ico_home.svg" alt="Homepage">Home</a></div>
-                  <div class="links"><a href="psn-list.html"><img src="images/ico_psn.svg" alt="Go to Playstation Games">Playstation</a></div>
+                  <div class="links"><a href="psn-list.html" class="active"><img src="images/ico_psn.svg" alt="Go to Playstation Games">Playstation</a></div>
                   <div class="links"><a href="contact.html"><img src="images/ico_contact.svg" alt="Contact Us">Contact</a></div>
                   <div class="links"><a href="about.html"><img src="images/ico_about.svg" alt="About Us">About</a></div>
                   <div class="links"><a href="wishlist.html"><img src="images/ico_heart.svg" alt="Open your Wishlist">Wishlist</a></div>
-                  <div class="links"><a href="cart.html" class="active"><img src="images/ico_cart.svg" alt="Open Shopping Cart">Shopping Cart</a></div>
+                  <div class="links"><a href="cart.html"><img src="images/ico_cart.svg" alt="Open Shopping Cart">Shopping Cart</a></div>
                   <div class="links"><a href="checkout.html"><img src="images/ico_checkout.svg" alt="Go to Checkout">Checkout</a></div>
                   <div class="links"><a href="sellgames.html"><img src="images/ico_sell_games.svg" alt="Sell your Games">Sell Games</a></div>
                   <div class="links"><a href="profile.html"><img src="images/ico_profile.svg" alt="Open your Profile">Profile</a></div>
                 </div>
               </div>
               <div class="links"><a href="index.html" aria-label="Homepage"><span class="out-of-view-menu-text">Home</span><img class="topmenu__images" src="images/ico_home.svg" alt="Homepage"></a></div>
-              <div class="links"><a href="psn-list.html" aria-label="Go to playstation games"><span class="out-of-view-menu-text">Go to playstation games</span><img class="topmenu__images" src="images/ico_psn.svg" alt="Go to Playstation Games"></a></div>
+              <div class="links"><a href="psn-list.html" class="active" aria-label="Go to playstation games"><span class="out-of-view-menu-text">Go to playstation games</span><img class="topmenu__images" src="images/ico_psn.svg" alt="Go to Playstation Games"></a></div>
               <div class="links"><a href="about.html" aria-label="About us"><span class="out-of-view-menu-text">About us</span><img class="topmenu__images" src="images/ico_about.svg" alt="About Us"></a></div>
               <div class="links"><a href="wishlist.html" aria-label="Open your wishlist"><span class="out-of-view-menu-text">Open your wishlist</span><img class="topmenu__images" src="images/ico_heart.svg" alt="Open your Wishlist"></a></div>
-              <div class="links"><a href="cart.html" class="active" aria-label="Open shopping cart"><span class="out-of-view-menu-text">Open shopping cart</span><img class="topmenu__images" src="images/ico_cart.svg" alt="Open Shopping Cart"></a></div>
+              <div class="links"><a href="cart.html" aria-label="Open shopping cart"><span class="out-of-view-menu-text">Open shopping cart</span><img class="topmenu__images" src="images/ico_cart.svg" alt="Open Shopping Cart"></a></div>
               <div class="links"><a href="contact.html" aria-label="Contact us"><span class="out-of-view-menu-text">Contact us</span><img class="topmenu__images" src="images/ico_contact.svg" alt="Contact Us"></a></div>
               <div class="links back"><a href="#" class="back-link"><div class="back"><img src="images/ico_chevron-left.svg" alt="Go Back one step">Back</div></a></div>
             </div>
@@ -78,7 +79,7 @@
         </div>
         <div class="placeholder"> </div>
         <div class="profile__name"><div><a href="profile.html">Gamer Gamerson</a></div></div>
-        <div class="logout"><div><a href="index_sign-in.html"><p class="logout">(Log out)</p></a></div></div>
+        <div class="logout"><div><a href="index_sign-in.html">(Log out)</a></div></div>
         <div class="search-bar">
           <form id="search-form" name="searchQuery" action="search-results.html" method="get">
             <input type="text" id="search" name="query" placeholder="Search for Game" aria-label="Search for Game">
@@ -89,29 +90,41 @@
     </header>
     <main id="main">
       <div class="main__wrapper">
-        <section class="cart" aria-label="Shopping Cart | Main Section">
-          <h1>Shopping Cart</h1>
-          <div class="cart-count" id="cart-count"></div>
-          <div class="buy-games__left">
-            <a href="psn-list.html"> Back to Games</a>
-            <button class="clear-cart">Clear Cart</button>
-          </div>
-          <div class="image-mockup psn__wrapper">
-            <div class="cart-wrapper">
-              <div class="cart-container" id="cart-container"></div>
+        <section class="psn-grid" aria-label="Playstation Page | Main Section">
+          <h2 class="playstation-list-header">Search Results</h2>
+          <fieldset id="search-field">
+            <legend>Filter</legend>
+            <div class="search-container">
+              <div class="number-of-products">Number of games on site: 15</div>
+              <div class="filter-section">
+                <div class="choose-filter" id="choose-filter">
+                  <label for="filters">Choose your filter:</label>
+                  <select id="filters" name="filters">
+                    <option value="">Choose your filter</option>
+                    <option value="Playstation 4">Playstation 4</option>
+                    <option value="Playstation 5">Playstation 5</option>
+                    <option value="Full Disc Versions">Full Disc Versions</option>
+                    <option value="Key only Versions">Key only Versions</option>
+                  </select>
+                </div>
+                <div class="choose-sort" id="choose-sort">
+                  <label for="sort">Choose your sorting option:</label>
+                  <select id="sort" name="sort">
+                    <option value="">Sort by</option>
+                    <option value="Price (Low to High)">Price (Low to High)</option>
+                    <option value="Price (High to Low)">Price (High to Low)</option>
+                    <option value="Release Date (Newest First)">Release Date (Newest First)</option>
+                    <option value="Release Date (Oldest First)">Release Date (Oldest First)</option>
+                    <option value="Name (A to Z)">Name (A to Z)</option>
+                    <option value="Name (Z to A)">Name (Z to A)</option>
+                  </select>
+                </div>
+              </div>
             </div>
-          </div>
-          <h2 class="summary-header">Total to pay:</h2>
-          <div class="checkout__cart" id="checkout__cart"></div>
-
-          <div class="cart-checkout">
-            <a href="checkout.html" role="button"
-              ><div class="cta">Checkout</div></a
-            >
-          </div>
-          <!-- <a href="psn-list.html"><span class="red">Cancel order</span></a> -->
-          <div class="spacer"></div>
+          </fieldset>
+          <div class="image-mockup psn__wrapper" id="games-container"></div>
         </section>
+        <div class="spacer"></div>
       </div>
     </main>
     <footer>
@@ -121,11 +134,11 @@
             <div class="footer__sitenav" role="navigation" aria-label="Footer Site Navigation">
               <div class="links widescreen"><div class="back"><a href="#" class="back-link"><img src="images/ico_chevron-left.svg" alt="Go Back">Back</a></div></div>
               <div class="links"><a href="index.html"><img src="images/ico_home.svg" alt="Homepage">Home</a></div>
-              <div class="links widescreen"><a href="psn-list.html"><img src="images/ico_psn.svg" alt="Go to Playstation Games">Playstation</a></div>
+              <div class="links widescreen"><a href="psn-list.html" class="active"><img src="images/ico_psn.svg" alt="Go to Playstation Games">Playstation</a></div>
               <div class="links"><a href="contact.html"><img src="images/ico_contact.svg" alt="Contact US">Contact</a></div>
               <div class="links"><a href="about.html"><img src="images/ico_about.svg" alt="About Us">About</a></div>
               <div class="links widescreen"><a href="wishlist.html"><img src="images/ico_heart.svg" alt="Open your Wishlist">Wishlist</a></div>
-              <div class="links"><a href="cart.html" class="active"><img src="images/ico_cart.svg" alt="Open Shopping Cart">Shopping Cart</a></div>
+              <div class="links"><a href="cart.html"><img src="images/ico_cart.svg" alt="Open Shopping Cart">Shopping Cart</a></div>
               <div class="links widescreen"><a href="checkout.html"><img src="images/ico_checkout.svg" alt="Go to Checkout">Checkout</a></div>
               <div class="links widescreen"><a href="sellgames.html"><img src="images/ico_sell_games.svg" alt="Sell your Games">Sell Games</a></div>
               <div class="links widescreen"><a href="profile.html"><img src="images/ico_profile.svg" alt="Open your Profile">Profile</a></div>

@@ -906,7 +906,7 @@ input {
   display: grid;
   text-align: right;
   color: var(--color-yellow-logo);
-  // padding-right: 5px;
+  padding-right: 5px;
   margin-top: 5px;
 }
 .stats, .checkout__cart {
@@ -2522,7 +2522,6 @@ a:hover {
   }
   .logout {
     margin-right: 0.2em;
-    padding-right: 5px;
   }
   .main-menu {
     grid-area: menu;

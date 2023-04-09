@@ -255,7 +255,7 @@ footer a {
   align-items: center;
   margin-top: 1px;
   position: fixed;
-  // right: 15px;
+  right: 15px;
   height: 35px;
   background: var(--color-black);
   border-radius: 0.5em;
@@ -906,7 +906,7 @@ input {
   display: grid;
   text-align: right;
   color: var(--color-yellow-logo);
-  // padding-right: 5px;
+  padding-right: 5px;
   margin-top: 5px;
 }
 .stats, .checkout__cart {
@@ -2517,13 +2517,6 @@ a:hover {
 
 /* @media screensize from 769px to 1080px */
 @media screen and (min-width: 769px) {
-  .navbar-top {
-    right: 15px;
-  }
-  .logout {
-    margin-right: 0.2em;
-    padding-right: 5px;
-  }
   .main-menu {
     grid-area: menu;
     width: 100%;
@@ -2624,7 +2617,7 @@ a:hover {
   }
   .checkout, .cart {
     .checkout__cart {
-      grid-template-columns: 200px 240px 151px;
+      grid-template-columns: 200px 240px 140px;
     }
   }
 
