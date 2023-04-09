@@ -388,9 +388,7 @@ main {
   transform: scale(1.5);
 }
 .index .buy-sell_buttons img {
-  width: 90%;
-  justify-content: center;
-  display: flex;
+  width: 6vw;
   border-radius: 50%;
   transition: all 0.3s;
 }
@@ -880,11 +878,12 @@ input {
 
 .buy-games__left, .goto-cart {
   display: flex;
-  gap: 2.5em;
+  gap: 3em;
   padding: 1em 0;
   color: var(--color-yellow-logo);
   text-decoration: none;
   align-items: center;
+  width: 95vw;
   justify-content: center;
 }
 .buy-games__left a, .goto-cart a {
@@ -1134,7 +1133,7 @@ input {
   white-space: nowrap;
 }
 .checkout .checkout__cart, .cart .checkout__cart {
-  grid-template-columns: 120px 110px 80px;
+  grid-template-columns: 120px 110px 70px;
   grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 40px;
 }
 
@@ -1316,8 +1315,8 @@ legend {
   background-color: var(--color-black-60);
   border: 1px solid var(--color-yellow-logo);
   height: 30px;
-  width: 50px;
-  margin-left: 16px;
+  width: 30px;
+  margin-left: 6px;
   border-radius: var(--border-radius-boxes);
   cursor: pointer;
 }
@@ -1865,7 +1864,7 @@ legend {
   justify-content: center;
   min-width: 350px;
   width: 95vw;
-  max-width: 640px;
+  max-width: 600px;
   background-color: var(--color-black-60);
   border: var(--border-1px-yellow);
   border-radius: var(--border-radius-boxes);
@@ -1885,7 +1884,7 @@ legend {
   justify-content: center;
   text-align: center;
   height: 50px;
-  min-width: 360px;
+  width: 300px;
   color: var(--color-yellow-logo);
   background-color: var(--color-black-90);
   border-radius: var(--border-radius-boxes);
@@ -2419,7 +2418,7 @@ a:hover {
   }
   .cart-wrapper {
     flex-wrap: nowrap;
-    max-width: 640px;
+    max-width: 800px;
   }
   .footer__wrapper {
     flex-direction: row;
@@ -2473,6 +2472,7 @@ a:hover {
     width: 500px;
   }
   .cart .buy-games__left, .cart .wl-left, .cart .wl-right, .wishlist .buy-games__left, .wishlist .wl-left, .wishlist .wl-right {
+    width: 532px;
     display: flex;
     justify-content: space-around;
   }
@@ -2542,7 +2542,7 @@ a:hover {
     width: 800px;
   }
   .checkout .checkout__cart, .cart .checkout__cart {
-    grid-template-columns: 280px 200px 110px;
+    grid-template-columns: 280px 200px 100px;
   }
   .cart-buttons {
     width: 200px;
@@ -2587,4 +2587,4 @@ a:hover {
     padding-left: 550px;
     justify-content: space-around;
   }
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main_20230408151337.css.map */

@@ -957,12 +957,12 @@ input {
 
 .buy-games__left, .goto-cart {
   display: flex;
-  gap: 2.5em;
+  gap: 3em;
   padding: 1em 0;
   color: var(--color-yellow-logo);
   text-decoration: none;
   align-items: center;
-  // width: 100%;
+  width: 95vw;
   justify-content: center;
   a {
     display: flex;
@@ -1221,7 +1221,7 @@ input {
     white-space: nowrap;
   }
   .checkout__cart {
-    grid-template-columns: 120px 110px 80px;
+    grid-template-columns: 130px 110px 70px;
     grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 40px;
   }
 }
@@ -1414,8 +1414,8 @@ legend {
   background-color: var(--color-black-60);
   border: 1px solid var(--color-yellow-logo);
   height: 30px;
-  width: 50px;
-  margin-left: 16px;
+  width: 30px;
+  margin-left: 6px;
   border-radius: var(--border-radius-boxes);
   cursor: pointer;
 }
@@ -2009,7 +2009,7 @@ legend {
   justify-content: center;
   min-width: 350px;
   width: 95vw;
-  max-width: 640px;
+  max-width: 300px;
   background-color: var(--color-black-60);
   border: var(--border-1px-yellow);
   border-radius: var(--border-radius-boxes);
@@ -2031,7 +2031,7 @@ legend {
   justify-content: center;
   text-align: center;
   height: 50px;
-  min-width: 360px;
+  width: 300px;
   color: var(--color-yellow-logo);
   background-color: var(--color-black-90);
   border-radius: var(--border-radius-boxes);
@@ -2580,7 +2580,7 @@ a:hover {
   }
   .cart-wrapper {
     flex-wrap: nowrap;
-    max-width: 640px;
+    max-width: 800px;
     // gap: 1em;
   }
   .footer__wrapper {
@@ -2643,7 +2643,7 @@ a:hover {
   }
   .cart, .wishlist {
     .buy-games__left, .wl-left, .wl-right {
-      // width: 532px;
+      width: 532px;
       display: flex;
       justify-content: space-around;
       a {
@@ -2727,11 +2727,11 @@ a:hover {
   .checkout__wrapper{
     width: 800px;
   }
-  .checkout, .cart {
-    .checkout__cart {
-      grid-template-columns: 280px 200px 110px;
-    }
-  }
+  // .checkout, .cart {
+  //   .checkout__cart {
+  //     grid-template-columns: 280px 200px 100px;
+  //   }
+  // }
   .cart-buttons {
     width: 200px;
     max-width: 800px;

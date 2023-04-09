@@ -2009,7 +2009,7 @@ legend {
   justify-content: center;
   min-width: 350px;
   width: 95vw;
-  max-width: 640px;
+  max-width: 600px;
   background-color: var(--color-black-60);
   border: var(--border-1px-yellow);
   border-radius: var(--border-radius-boxes);
@@ -2580,7 +2580,7 @@ a:hover {
   }
   .cart-wrapper {
     flex-wrap: nowrap;
-    max-width: 640px;
+    max-width: 800px;
     // gap: 1em;
   }
   .footer__wrapper {
@@ -2729,7 +2729,7 @@ a:hover {
   }
   .checkout, .cart {
     .checkout__cart {
-      grid-template-columns: 280px 200px 110px;
+      grid-template-columns: 280px 200px 100px;
     }
   }
   .cart-buttons {
