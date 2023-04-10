@@ -2401,7 +2401,7 @@ a:hover {
 /* @media screensize from 769px to 1080px */
 @media screen and (min-width: 769px) {
   .index .buy-sell_buttons img {
-    width: 10vw;
+    width: 8vw;
   }
   .navbar-top {
     right: 15px;
