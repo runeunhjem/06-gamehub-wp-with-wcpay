@@ -10,7 +10,7 @@ const id = params.get("id");
 const searchQuery = params.get("query");
 const form = document.getElementById("search-form");
 const input = form.querySelector("input[name='query']");
-setTimeout(() => {
+// setTimeout(() => {
   if (searchQuery) {
     if (searchQuery) {
       searchTerm = searchQuery;
