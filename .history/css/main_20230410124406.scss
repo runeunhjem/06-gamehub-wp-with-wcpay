@@ -995,8 +995,7 @@ input {
     align-items: center;
     padding: 4px;
     min-width: 160px;
-    width: 100%;
-    // width: 260px;
+    width: 260px;
     background-color: var(--color-black);
     color: var(--color-yellow-logo);
     border: var(--border-1px-yellow);
@@ -1007,9 +1006,6 @@ input {
   }
   a:hover {
     text-decoration: underline;
-  }
-  .clear-cart {
-    width: 100%;
   }
 }
 
@@ -1898,7 +1894,7 @@ legend {
   background-color: var(--color-black);
   border-radius: var(--border-radius-boxes);
   width: 65px;
-  margin: 0 2px 0 0;
+  margin: 0 0 0 0;
   text-align: center;
   color: var(--color-yellow-logo);
   padding: 2px 6px 2px 10px;
@@ -2746,16 +2742,14 @@ a:hover {
         display: flex;
         // width: 266px;
         padding: 4px;
-        width: 100%;
-        // width: 260px;
+        width: 260px;
         background-color: var(--color-black);
         color: var(--color-yellow-logo);
         border: var(--border-1px-yellow);
         border-radius: var(--border-radius-boxes);
      }
      button {
-      width: 100%;
-      // width: 260px;
+      width: 260px;
      }
     }
     .cart {

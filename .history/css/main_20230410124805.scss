@@ -995,8 +995,7 @@ input {
     align-items: center;
     padding: 4px;
     min-width: 160px;
-    width: 100%;
-    // width: 260px;
+    width: 260px;
     background-color: var(--color-black);
     color: var(--color-yellow-logo);
     border: var(--border-1px-yellow);
@@ -1007,9 +1006,6 @@ input {
   }
   a:hover {
     text-decoration: underline;
-  }
-  .clear-cart {
-    width: 100%;
   }
 }
 
@@ -2746,16 +2742,15 @@ a:hover {
         display: flex;
         // width: 266px;
         padding: 4px;
-        width: 100%;
-        // width: 260px;
+        width: 260px;
+        width: 260px;
         background-color: var(--color-black);
         color: var(--color-yellow-logo);
         border: var(--border-1px-yellow);
         border-radius: var(--border-radius-boxes);
      }
      button {
-      width: 100%;
-      // width: 260px;
+      width: 260px;
      }
     }
     .cart {
