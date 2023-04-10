@@ -661,10 +661,10 @@ input {
     border: 1px solid var(--color-black-90);
     background-color: var(--color-yellow-logo);
     color: var(--color-black-90);
-    // padding: 3px 8em;
+    padding: 3px 8em;
     border-radius: 0.4em;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 400;
   }
   .facebook::before {
     content: url(../images/ico_facebook.svg);
@@ -712,7 +712,7 @@ input {
   background-color: var(--color-black-60);
   border-radius: var(--border-radius-boxes);
   border: var(--border-1px-yellow);
-  margin: 1em 0 2em 0;
+  margin: 1em auto;
 }
 
 /* Register form & Sell Games Form*/
@@ -740,38 +740,24 @@ input {
   min-width: 350px;
   width: 95vw;
   max-width: 600px;
-  margin-bottom: 1em;
   .divider {
     margin: 1em auto;
   }
 }
-.form_title, .form_paypal, .form_asking-price, .form_platform, .form_type, .form_cover, .form_rating, .form_gamespot-link, .form_confirm {
+.form_title, .form_paypal, .form_asking-price, .form_platform, .form_type, . {
   width: 100%;
 }
-#sellgames-button {
-  // width: 100%;
-  // height: 50px;
-  background-color: var(--color-yellow-logo);
-  padding: 1em 2em;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  border-radius: var(--border-radius-boxes);
-    font-weight: 600;
-  // a {
-  //   color: var(--color-black-90);
-  //   text-decoration: none;
-  //   display: flex;
-  //   justify-content: space-around;
-  // }
+.sellgames-button {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    display: flex;
+    justify-content: space-around;
+  }
 }
-#sellgames-button:hover {
-  background-color: var(--color-black);
-  // a {
-    color: var(--color-yellow-logo);
-    border: var(--border-1px-yellow);
-  // }
-}
+
 .form_confirm {
   margin: 1em auto;
 }
@@ -1035,15 +1021,15 @@ input {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1em;
   margin-bottom: 2em;
   min-width: 350px;
   max-width: 600px;
-  width: 90%;
+  // width: 500px;
   gap: 1em;
   .buy-games__left, .goto-cart {
     width: 166px;
     gap:0;
-
   }
 }
 

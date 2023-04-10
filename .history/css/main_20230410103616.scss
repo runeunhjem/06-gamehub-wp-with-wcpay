@@ -1035,6 +1035,7 @@ input {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
+  // padding: 1em auto;
   margin-bottom: 2em;
   min-width: 350px;
   max-width: 600px;
@@ -1043,7 +1044,10 @@ input {
   .buy-games__left, .goto-cart {
     width: 166px;
     gap:0;
-
+    
+  }
+  a {
+    width: 250px;
   }
 }
 
