@@ -352,6 +352,7 @@ main {
 .error-message {
   color: #ff0000;
   display: none;
+  text-align: left;
 }
 
 #message {
@@ -649,7 +650,6 @@ input {
 .fieldset_sellgames {
   display: flex;
   justify-content: center;
-  height: 680px;
   min-width: 350px;
   width: 95vw;
   max-width: 600px;
@@ -663,7 +663,7 @@ input {
   width: 100%;
 }
 
-#sellgames-button {
+#sellGames-button {
   background-color: var(--color-yellow-logo);
   padding: 1em 2em;
   border-radius: var(--border-radius-boxes);

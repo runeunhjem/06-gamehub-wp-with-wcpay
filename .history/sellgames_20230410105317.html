@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-
-
-
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Hotjar Tracking Code for my site -->
@@ -26,7 +22,7 @@
     <link rel="stylesheet" href="css/out-of-view-menu-text.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script defer src="js/script.js" type="module"></script>
-    <script defer src="js/sellgames.js"></script>
+    <!-- <script defer src="js/psnlist.js" type="module"></script> -->
     <!-- <script defer src="js/search.js" type="module"></script> -->
     <title>Game Hub | Sell your games</title>
   </head>
@@ -82,7 +78,7 @@
         </div>
         <div class="placeholder"> </div>
         <div class="profile__name"><div><a href="profile.html">Gamer Gamerson</a></div></div>
-        <div class="logout"><div><a href="index_sign-in.html">(Log out)</a></div></div>
+        <div class="logout"><div><a href="index_sign-in.html"><p class="logout">(Log out)</p></a></div></div>
         <div class="search-bar">
           <form id="search-form" name="searchQuery" action="search-results.html" method="get">
             <input type="text" id="search" name="query" placeholder="Search for Game" aria-label="Search for Game">
@@ -97,68 +93,61 @@
           <h1>Sell Games</h1>
           <fieldset class="fieldset_sellgames">
             <legend>Enter Game Details</legend>
-                <form class="sellgames" id="sellgames-form" action="psn-list.html" method="get">
-                      <div class="full_register_wrapper" id="full_register_wrapper">
-                        <div class="sellgames_form_wrapper">
-                            <div class="form_asking-price">
-                              <label for="asking-price">Asking Price:</label>
-                              <input type="text" name="asking-price" id="asking-price" placeholder="Asking Price" aria-label="Enter your asking price">
-                            </div>
-                            <div class="form_platform">
-                              <label for="platform">Platform:</label>
-                              <input type="text" name="platform" id="platform" placeholder="Platform" aria-label="Game Platform">
-                            </div>
-                        </div>
-                        <div class="sellgames_form_wrapper">
-                          <div class="form_title">
-                            <label for="title">Game Title:<span class="required">*</span></label>
-                            <input type="text" name="title" id="title" placeholder="Game Title" aria-label="Game Title">
-                            <div class="error-message" id="titleSellGamesError">Enter a valid game title</div>
-                          </div>
-                        </div>
-                        <div class="sellgames_form_wrapper">
-                          <div class="form_type">
-                            <label for="type">Gametype ( Disc or Key? ): <span class="required">*</span></label>
-                            <input type="text" name="type" id="type" placeholder="Key only or Full Disc?" aria-label="Type">
-                            <div class="error-message" id="typeSellGamesError">Key only or full game disc?</div>
-                          </div>
-                          <div class="form_cover">
-                            <label for="cover">Game Cover:</label>
-                            <input type="text" name="cover" id="cover" placeholder="Game Cover" aria-label="Link to Game Cover">
-                          </div>
-                        </div>
-                        <div class="sellgames_form_wrapper">
-                          <div class="form_rating">
-                            <label for="rating">Rating:</label>
-                            <input type="text" name="rating" id="rating" placeholder="Rating" aria-label="Rating">
-                          </div>
-                          <div class="form_gamespot-link">
-                            <label for="gamespot-link">Gamespot Link:</label>
-                            <input type="text" name="gamespot-link" id="gamespot-link" placeholder="Gamespot Link" aria-label="Gamespot Link">
-                          </div>
-                        </div>
-                        <div class="sellgames_form_wrapper">
-                          <div class="form_paypal">
-                            <label for="paypal">Your Paypal Account: <span class="required">*</span></label>
-                            <input type="text" name="paypal" id="paypal" placeholder="Your Paypal Account" aria-label="Your Paypal Account" autocomplete="email">
-                            <div class="error-message" id="paypalSellGamesError">Enter a valid email for your PayPal</div>
-                          </div>
-                        </div>
-                        <div class="divider"> </div>
-                        <div class="sellgames_form_wrapper">
-                            <div class="form_confirm">
-                            <label for="confirm">Confirm with Password:<span class="required">*</span></label>
-                            <input type="password" name="confirm" id="confirm" placeholder="Confirm with Password" aria-label="Confirm with Password" autocomplete="current-password">
-                            <div class="error-message" id="password_sellGamesError">Min 4 characters</div>
-                          </div>
-                        </div>
-                        <div class="sellgames_form_wrapper" id="sellgames_form_wrapper">
-                          <div class="success message-sent" id="sellGames-sold"></div>
-                          <div class="sellgames-button">
-                            <button type="submit" class="send-msg-button" id="sellGames-button">Sell My Game</button>
-                          </div>
-                        </div>
+                <form class="sellgames" action="profile.html">
+                  <div class="full_register_wrapper">
+                    <div class="sellgames_form_wrapper">
+                      <div class="form_asking-price">
+                        <label for="asking-price">Asking Price:</label>
+                        <input type="text" name="asking-price" id="asking-price" placeholder="Asking Price" aria-label="Enter your asking price" required>
                       </div>
+                      <div class="form_platform">
+                        <label for="platform">Platform:</label>
+                        <input type="text" name="platform" id="platform" placeholder="Platform" aria-label="Game Platform">
+                      </div>
+                    </div>
+                    <div class="sellgames_form_wrapper">
+                      <div class="form_title">
+                        <label for="title">Game Title:<span class="required">*</span></label>
+                        <input type="text" name="title" id="title" placeholder="Game Title" aria-label="Game Title" required>
+                      </div>
+                    </div>
+                    <div class="sellgames_form_wrapper">
+                      <div class="form_type">
+                        <label for="type">Type (Disc, Key?): <span class="required">*</span></label>
+                        <input type="text" name="type" id="type" placeholder="Type" aria-label="Type">
+                      </div>
+                      <div class="form_cover">
+                        <label for="cover">Game Cover:</label>
+                        <input type="text" name="cover" id="cover" placeholder="Game Cover" aria-label="Link to Game Cover">
+                      </div>
+                    </div>
+                    <div class="sellgames_form_wrapper">
+                      <div class="form_rating">
+                        <label for="rating">Rating:</label>
+                        <input type="text" name="rating" id="rating" placeholder="Rating" aria-label="Rating">
+                      </div>
+                      <div class="form_gamespot-link">
+                        <label for="gamespot-link">Gamespot Link:</label>
+                        <input type="text" name="gamespot-link" id="gamespot-link" placeholder="Gamespot Link" aria-label="Gamespot Link">
+                      </div>
+                    </div>
+                    <div class="sellgames_form_wrapper">
+                      <div class="form_paypal">
+                        <label for="paypal">Your Paypal Account: <span class="required">*</span></label>
+                        <input type="text" name="paypal" id="paypal" placeholder="Your Paypal Account" aria-label="Your Paypal Account" required>
+                      </div>
+                    </div>
+                    <div class="divider"> </div>
+                    <div class="sellgames_form_wrapper">
+                      <div class="form_confirm">
+                        <label for="confirm">Confirm with Password:<span class="required">*</span></label>
+                        <input type="password" name="confirm" id="confirm" placeholder="Confirm with Password" aria-label="Confirm with Password" required>
+                      </div>
+                    </div>
+                    <div class="sellgames_form_wrapper" id="sellgames_form_wrapper">
+                      <button type="submit" id="sellgames-button">Sell that Game</button>
+                    </div>
+                  </div>
                 </form>
           </fieldset>
           <p class="sell-info">Your game will be available to buyers as soon as we have checked that it complies to our current rules and regulations.</p>
@@ -230,4 +219,4 @@
       <div class="copyright">Copyright 2022 © All rights reserved</div>
     </footer>
   </body>
-</html>
+</html> -->

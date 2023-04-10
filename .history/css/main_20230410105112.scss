@@ -393,7 +393,6 @@ main {
 .error-message {
   color: #ff0000;
   display: none;
-  text-align: left;
 }
 #message {
   padding: 5px 0;
@@ -736,7 +735,7 @@ input {
 .fieldset_sellgames {
   display: flex;
   justify-content: center;
-  // height: 680px;
+  height: 680px;
   // width: 358px;
   min-width: 350px;
   width: 95vw;
