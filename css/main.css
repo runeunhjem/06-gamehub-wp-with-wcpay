@@ -888,6 +888,7 @@ input {
 .buy-games__left, .goto-cart {
   display: flex;
   gap: 1.5em;
+  min-width: 350px;
   width: 95vw;
   max-width: 640px;
   padding: 1em 0;
@@ -1723,7 +1724,7 @@ legend {
   border: var(--border-1px-yellow);
   background-color: var(--color-black);
   border-radius: var(--border-radius-boxes);
-  width: 70px;
+  width: 65px;
   margin: 0 5px;
   text-align: center;
   color: var(--color-yellow-logo);
@@ -1986,7 +1987,7 @@ legend {
 
 .remove-button {
   padding: 4px;
-  width: 138px;
+  width: 135px;
   background-color: var(--color-black);
   color: var(--color-yellow-logo);
   border: var(--border-1px-yellow);
