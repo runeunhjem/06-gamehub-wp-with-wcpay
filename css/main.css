@@ -2625,6 +2625,10 @@ a:hover {
     margin-top: 25px;
     width: 60%;
   }
+  .index .buy-sell_buttons img {
+    width: 5vw;
+    margin: 0 1vw;
+  }
   .footer__wrapper {
     padding-right: 550px;
     padding-left: 550px;
