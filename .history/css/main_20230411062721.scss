@@ -962,7 +962,7 @@ input {
   width: 90%;
   min-width: 350px;
   background-color: var(--color-black-90);
-  max-width: 95vw;
+  max-width: 600px;
   border: var(--border-1px-yellow);
   border-radius: var(--border-radius-boxes);
   .picture {
@@ -980,9 +980,9 @@ input {
 
 .buy-games__left, .goto-cart {
   display: flex;
-  // gap: 1.5em;
-  // min-width: 350px;
-  // max-width: 95vw;
+  gap: 1.5em;
+  min-width: 350px;
+  max-width: 95vw;
   // max-width: 640px;
   padding: 1em 0;
   color: var(--color-yellow-logo);
@@ -1042,15 +1042,15 @@ input {
   align-items: center;
   margin-bottom: 2em;
   min-width: 350px;
-  // max-width: 600px;
+  max-width: 600px;
   width: 90%;
-  gap: 2em;
-  // .buy-games__left, .goto-cart {
-  //   width: 166px;
-  //   gap:0;
-  // }
-}
+  gap: 1em;
+  .buy-games__left, .goto-cart {
+    width: 166px;
+    gap:0;
 
+  }
+}
 
 
 /* Contact Page */
