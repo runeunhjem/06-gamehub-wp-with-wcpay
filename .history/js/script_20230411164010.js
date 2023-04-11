@@ -98,36 +98,36 @@ function addToCart(event) {
   const featured = game.featured;
   const formattedTotal = total.toFixed(2);
 
-  // const data = {
-  //   product_id: parseInt(gameID),
-  //   quantity: quantity,
-  // };
+  const data = {
+    product_id: parseInt(gameID),
+    quantity: quantity,
+  };
 
-  // // Send a POST request to the cart endpoint
-  // fetch((postApiURL), {
-  //   method: "POST",
-  //   headers: {
-  //     "Content-Type": "application/json",
-  //     "Consumer-Key": "ck_0a9221746a98e989919da079c6680ea1775a43c6",
-  //     "Consumer-Secret": "cs_733d7600657d23aa12748b3d9d3707f08d8eab96"
-  //   },
-  //   body: JSON.stringify(data),
-  // })
-  //   .then((response) => {
-  //     // If the response is successful, parse the JSON data
-  //     if (response.ok) {
-  //       return response.json();
-  //     }
-  //     // If the response is not successful, throw an error
-  //     throw new Error("Network response was not ok");
-  //   })
-  //   .then((result) => {
-  //     console.log("Cart updated:", result);
-  //   })
-  //   .catch((error) => {
-  //     // Log any errors to the console
-  //     console.error("Error:", error);
-  //   });
+  // Send a POST request to the cart endpoint
+  fetch((postApiURL), {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Consumer-Key": "ck_0a9221746a98e989919da079c6680ea1775a43c6",
+      "Consumer-Secret": "cs_733d7600657d23aa12748b3d9d3707f08d8eab96"
+    },
+    body: JSON.stringify(data),
+  })
+    .then((response) => {
+      // If the response is successful, parse the JSON data
+      if (response.ok) {
+        return response.json();
+      }
+      // If the response is not successful, throw an error
+      throw new Error("Network response was not ok");
+    })
+    .then((result) => {
+      console.log("Cart updated:", result);
+    })
+    .catch((error) => {
+      // Log any errors to the console
+      console.error("Error:", error);
+    });
 
   const product = {
     id: parseInt(gameID),
