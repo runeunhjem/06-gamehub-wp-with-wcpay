@@ -902,7 +902,6 @@ input {
   display: flex;
   align-items: center;
   padding: 4px;
-  min-width: 160px;
   width: 100%;
   background-color: var(--color-black);
   color: var(--color-yellow-logo);

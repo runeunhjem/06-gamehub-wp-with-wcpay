@@ -14,28 +14,28 @@ let formSubmitted = false;
 
 // CHANGE PLACEHOLDERS TO INPUT TIPS ON FOCUS
 firstName.addEventListener("focus", function() {
-  firstName.placeholder = "Min 1 letter";
+  firstName.placeholder = "Min 1 letter";  
 });
 firstName.addEventListener("blur", function() {
-  firstName.placeholder = "First Name";
+  firstName.placeholder = "First Name";  
 });
 lastName.addEventListener("focus", function() {
-  lastName.placeholder = "Min 4 letters";
+  lastName.placeholder = "Min 4 letters";  
 });
 lastName.addEventListener("blur", function() {
-  lastName.placeholder = "Last Name";
+  lastName.placeholder = "Last Name";  
 });
 email.addEventListener("focus", function() {
-  email.placeholder = "Valid Email format (john.doe@mail.com)";
+  email.placeholder = "Valid Email format (john.doe@mail.com)";  
 });
 email.addEventListener("blur", function() {
-  email.placeholder = "Email Address";
+  email.placeholder = "Email Address";  
 });
 message.addEventListener("focus", function() {
-  message.placeholder = "Min 10 characters";
+  message.placeholder = "Min 10 characters";  
 });
 message.addEventListener("blur", function() {
-  message.placeholder = "What can we help you with";
+  message.placeholder = "What can we help you with";  
 });
 
 
@@ -50,7 +50,7 @@ function validateForm(event) {
     } else {
       firstNameError.style.display = "block";
       firstName.style.backgroundColor = "#fafad2";
-      firstName.style.color = "#FF0000";
+      firstName.style.color = "#000000";
     }
     if (checkLength(lastName.value, 3)) {
       lastNameError.style.display = "none";
@@ -70,7 +70,7 @@ function validateForm(event) {
       email.style.backgroundColor = "#fafad2";
       email.style.color = "#FF0000";
     }
-    if (checkLength(message.value, 9)) {
+    if (checkLength(message.value, 9)) {      
       messageError.style.display = "none";
       message.style.backgroundColor = "#8fff98";
       message.style.color = "#000000";
@@ -81,7 +81,7 @@ function validateForm(event) {
     }
     if (
       checkLength(firstName.value, 0) &&
-      checkLength(lastName.value, 3) &&
+      checkLength(lastName.value, 3) &&      
       validateEmail(email.value) &&
       checkLength(message.value, 9)
       ) {
