@@ -1435,10 +1435,14 @@ legend {
 
 .summary__wrapper {
   display: flex;
-  margin: 3.5em 1em 0 1em;
+  margin: 1.9em 1em 0 1em;
   flex-direction: column;
   justify-content: flex-start;
   gap: 10px;
+}
+.summary__wrapper .summary {
+  margin-left: 0;
+  font-style: italic;
 }
 .summary__wrapper .detail-image {
   background-image: url(../images/gamedetails/forgelegenddetails2_small.jpg);
@@ -1782,7 +1786,7 @@ legend {
   margin: 0 auto;
 }
 .product_details h1, .cart h1, .wishlist h1 {
-  margin: 0.25em;
+  margin-bottom: 0.25em;
   text-align: center;
 }
 .product_details .share, .cart .share, .wishlist .share {

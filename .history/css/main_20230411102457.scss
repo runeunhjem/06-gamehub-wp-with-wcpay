@@ -1571,15 +1571,11 @@ legend {
 
 .summary__wrapper {
   display: flex;
-  margin: 1.9em 1em 0 1em;
+  margin: 3.5em 1em 0 1em;
   flex-direction: column;
   // flex-wrap: wrap;
   justify-content: flex-start;
   gap: 10px;
-  .summary {
-    margin-left: 0;
-    font-style: italic;
-  }
   .detail-image {
     background-image: url(../images/gamedetails/forgelegenddetails2_small.jpg);
     background-size: cover;
