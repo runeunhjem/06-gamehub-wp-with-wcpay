@@ -902,7 +902,6 @@ input {
 /* Profile Page */
 .profile {
   max-width: 1000px;
-  width: 95vw;
   h4, .h4 {
     padding-bottom: 0.5em;
   }
@@ -1049,10 +1048,10 @@ input {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 1em 2em 1em;
+  margin-bottom: 2em;
   min-width: 320px;
   // max-width: 600px;
-  width: 100%;
+  width: 90%;
   gap: 2em;
   // .buy-games__left, .goto-cart {
   //   width: 166px;
@@ -2510,7 +2509,6 @@ a:hover {
   #search-field {
     max-width: 100%
   }
-  
 
 }
 

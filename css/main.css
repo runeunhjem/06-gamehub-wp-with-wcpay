@@ -802,6 +802,7 @@ input {
 /* Profile Page */
 .profile {
   max-width: 1000px;
+  width: 95vw;
 }
 .profile h4, .profile .h4 {
   padding-bottom: 0.5em;
@@ -865,7 +866,7 @@ input {
   display: grid;
   grid-template-columns: 200px 1fr;
   padding: 10px;
-  width: 90%;
+  width: 100%;
   min-width: 320px;
   background-color: var(--color-black-90);
   max-width: 95vw;
@@ -941,9 +942,9 @@ input {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2em;
+  margin: 0 1em 2em 1em;
   min-width: 320px;
-  width: 90%;
+  width: 100%;
   gap: 2em;
 }
 
