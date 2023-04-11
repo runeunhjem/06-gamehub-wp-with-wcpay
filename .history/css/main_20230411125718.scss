@@ -51,6 +51,7 @@
 
   .h4 {
     color: var(--color-white);
+    // padding: 0.5em 0;
   }
 
   h5, .h5 {
@@ -214,6 +215,33 @@ footer a {
   animation-direction: normal;
 }
 
+// /* CSS code */
+// #ham-burger, #top-burger {
+//   display: none;
+// }
+
+// .menu-flyin {
+//   display: none;
+//   /* Add any other styles for the menu here */
+// }
+
+// .menu-flyin.show {
+//   display: block;
+//   animation-name: flyin;
+//   animation-duration: 0.5s;
+//   animation-direction: normal;
+// }
+
+// @keyframes flyin {
+//   0% {
+//     top: -300px;
+//   }
+//   100% {
+//     top: 47px;
+//   }
+// }
+
+
 .header__wrapper {
   margin: 0 auto;
   height: 140px;
@@ -230,6 +258,7 @@ footer a {
   align-items: center;
   margin-top: 1px;
   position: fixed;
+  // right: 15px;
   height: 35px;
   background: var(--color-black);
   border-radius: 0.5em;
@@ -270,6 +299,7 @@ footer a {
   margin-top: 0px;
   align-items: center;
   width: 320px;
+  // max-width: 320px;
   height: 35px;
   border-radius: 0.5em;
   border: 1px solid var(--color-yellow-logo);
@@ -343,7 +373,9 @@ footer a {
 
 /* Main section*/
 main {
+  // padding: 2em;
   background-color: var(--color-black-60);
+
   min-width: 320px;
   max-width: 100%;
   margin: 0;
@@ -457,7 +489,9 @@ input {
 .index_sign-in, .sellgames {
   min-height: 50vh;
   justify-content: center;
+  // width: 100%;
   min-width: 320px;
+  // width: 95vw;
   max-width: 600px;
   text-align: center;
   input{
@@ -473,6 +507,8 @@ input {
   fieldset {
     display: Flex;
     justify-content: center;
+    // width: 320px;
+    // gap: 1em;
     min-width: 320px;
     width: 95vw;
     max-width: 600px;
@@ -486,13 +522,20 @@ input {
   .full_register_wrapper {
     min-width: 320px;
     width: 100%;
+    // max-width: 600px;
+    // align-items: center;
     display: flex;
     flex-direction: column;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    // gap: 1em;
+    // padding-bottom: 1em;
   }
   legend {
     padding: 0 0.5em;
     color: var(--color-yellow-logo);
     font-size: 1.4rem;
+    // text-align: center;
 
   }
   .signin_form_wrapper, .register_form_wrapper, .sellgames_form_wrapper {
@@ -501,6 +544,7 @@ input {
     gap: 2em;
     padding: 0.5em;
     width: 100%;
+    // justify-content: center;
   }
   .form_first-name, .form_last-name, .form_zip, .form_city,
   .form_country, .form_phone, .form_username, .form_password {
@@ -535,6 +579,7 @@ input {
     display: flex;
     width: 100%;
     padding: 0 1em;
+    // height: 100px;
     align-items: center;
     justify-content: space-around;
     label {
@@ -543,14 +588,29 @@ input {
       justify-content: left;
     }
     .sign-in-button, .register-button {
+      // display:flex;
+      // justify-content: center;
+      // height: 40px;
+      // width: 100%;
       cursor: pointer;
+      // padding: 1em;
       align-items: center;
+      // border: var(--border-1px-yellow);
+      // border-radius: var(--border-radius-boxes)
+      // button {
+        //   border: var(--border-1px-yellow);
+        //   // border-radius: var(--border-1px-yellow);
+        //   border-radius: var(--border-radius-boxes);
+        //   padding: 0.70em;
+        //   width: 15em;
+        // }
       }
       .sign-in-button-div, .register-button-div {
         display: flex;
         justify-content: center;
         button {
           width: 15em;
+          // margin-top: 1em;
           display: flex;
           justify-content: center;
           padding: 0.7em;
@@ -610,6 +670,7 @@ input {
     border: 1px solid var(--color-black-90);
     background-color: var(--color-yellow-logo);
     color: var(--color-black-90);
+    // padding: 3px 8em;
     border-radius: 0.4em;
     text-decoration: none;
     font-weight: 600;
@@ -644,6 +705,13 @@ input {
     #street-address, #email, #title, #repeat-password {
       width: 100%;
     }
+    // #paypal, #confirm, #title {
+    //   width: 330px;
+    // }
+    // .register-button {
+    //   margin-top: 1.3em;
+    //   width: 100%;
+    // }
   }
 }
 
@@ -658,6 +726,9 @@ input {
 
 /* Register form & Sell Games Form*/
 .fieldset_register, .fieldset_sellgames, fieldset {
+  // height: 670px;
+  // width: 90%;
+  // max-width: 400px;
   min-width: 320px;
   width: 95vw;
   max-width: 600px;
@@ -665,6 +736,7 @@ input {
   justify-content: center;
   margin-bottom: 2em;
   label {
+    // width: 151px;
     text-align: left;
   }
 }
@@ -672,6 +744,8 @@ input {
 .fieldset_sellgames {
   display: flex;
   justify-content: center;
+  // height: 680px;
+  // width: 358px;
   min-width: 320px;
   width: 95vw;
   max-width: 600px;
@@ -684,15 +758,28 @@ input {
   width: 100%;
 }
 #sellGames-button {
+  // width: 100%;
+  // height: 50px;
   background-color: var(--color-yellow-logo);
   padding: 1em 2em;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   border-radius: var(--border-radius-boxes);
-  font-weight: 600;
+    font-weight: 600;
+  // a {
+  //   color: var(--color-black-90);
+  //   text-decoration: none;
+  //   display: flex;
+  //   justify-content: space-around;
+  // }
 }
 #sellgames-button:hover {
   background-color: var(--color-black);
-  color: var(--color-yellow-logo);
-  border: var(--border-1px-yellow);
+  // a {
+    color: var(--color-yellow-logo);
+    border: var(--border-1px-yellow);
+  // }
 }
 .form_confirm {
   margin: 1em auto;
@@ -806,6 +893,9 @@ input {
   .bottomdivider, .divider_about {
     margin-bottom: 2em;
   }
+  // width: 90%;
+  // min-height: 50vh;
+  // margin: 11.5em auto;
   text-align: center;
 }
 
@@ -845,6 +935,7 @@ input {
   display: grid;
   text-align: right;
   color: var(--color-yellow-logo);
+  // padding-right: 5px;
   margin-top: 2px;
 }
 .stats, .checkout__cart {
@@ -898,6 +989,10 @@ input {
 
 .buy-games__left, .goto-cart {
   display: flex;
+  // gap: 1.5em;
+  // min-width: 320px;
+  // max-width: 95vw;
+  // max-width: 640px;
   padding: 1em 0;
   color: var(--color-yellow-logo);
   text-decoration: none;
@@ -908,7 +1003,9 @@ input {
     display: flex;
     align-items: center;
     padding: 4px;
+    // min-width: 160px;
     width: 100%;
+    // width: 260px;
     background-color: var(--color-black);
     color: var(--color-yellow-logo);
     border: var(--border-1px-yellow);
@@ -954,8 +1051,13 @@ input {
   align-items: center;
   margin: 0 1em 2em 1em;
   min-width: 320px;
+  // max-width: 600px;
   width: 100%;
   gap: 2em;
+  // .buy-games__left, .goto-cart {
+  //   width: 166px;
+  //   gap:0;
+  // }
 }
 
 
@@ -988,6 +1090,7 @@ input {
     flex-wrap: wrap;
     .contact-info, .visit-info, .send-message {
       margin: 0 auto;
+      // width: 100%;
       padding: 0.5em;
       .spacer {
         height: 1em;
@@ -1024,12 +1127,14 @@ input {
       }
     }
     .send-message {
+      // width: 320px;
       display: flex;
       justify-content: center;
       fieldset {
         display: block;
         justify-content: center;
         width: 100%;
+        // margin-bottom: 2em;
         border: 1px solid var(--color-yellow-logo);
         padding: 0 0.5em;
         border-radius: var(--border-radius-boxes);
@@ -1210,6 +1315,7 @@ input {
   align-items: center;
   background-color: var(--color-black-90);
   padding: 20px;
+  // border: var(--border-1px-yellow);
   border-radius: var(--border-radius-boxes);
   gap: 1em;
 }
@@ -1228,6 +1334,7 @@ input {
 }
 
 .visa {
+// width: 320px;
 margin-bottom: 2em;
 }
 
@@ -1339,6 +1446,7 @@ legend {
   justify-content: center;
   align-items: center;
   margin-bottom: 1em;
+  // gap: 1em;
   width: 100%;
   padding: 0 1em;
   flex-wrap: wrap;
@@ -1358,7 +1466,12 @@ legend {
   display: flex;
   justify-content: space-between;
   grid-area: search;
+  // gap: 15px;
+  // width: 100%;
   height: 35px;
+  // width: 260px;
+  // border: 1px solid var(--color-yellow-logo);
+  // background-color: var(--color-black-60);
   color: var(--color-white);
   border-radius: var(--border-radius-boxes);
 }
@@ -1367,8 +1480,10 @@ legend {
   background-image: url(../images/ico-search-yellow.svg);
   background-size: cover;
   background-repeat: no-repeat;
+  // background-color: var(--color-black-60);
   height: 20px;
   width: 20px;
+  // border-radius: var(--border-radius-boxes);
 }
 #search-button {
   display: flex;
@@ -1384,6 +1499,7 @@ legend {
 }
 #search-form {
   display: flex;
+  // align-items: center;
   justify-content: space-between;
   width: 100%;
   height: 30px;
@@ -1398,11 +1514,13 @@ legend {
   min-width: 320px;
   width: 320px;
   max-width: 100%;
+  // height: 150px;
   border: 1px solid var(--color-yellow-logo);
   padding: 0.5em 0 0.6em 0;
   border-radius: var(--border-radius-boxes);
   color: var(--color-white);
   background-color: var(--color-black-60);
+  // margin: 1em;
   flex-wrap: wrap;
   .filter-section {
     width: 100%;
@@ -1444,11 +1562,13 @@ legend {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  // gap: 1em;
   max-width: 640px;
 }
 .psn__wrapper_wide, .detail-image {
   display: none;
 }
+
 
 .summary__wrapper {
   display: flex;
@@ -2411,6 +2531,7 @@ a:hover {
     'navbar navbar navbar'
     'profile__pic profile__name logout'
     'profile__pic search search';
+    // 'profile__pic . .';
     grid-template-columns: 80px 160px 80px;
     grid-template-rows: 45px 35px 30px;
     .topnav__mob {

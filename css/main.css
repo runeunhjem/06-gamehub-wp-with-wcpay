@@ -1453,20 +1453,6 @@ legend {
   background-position: left;
 }
 
-.weeks-featured {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 40px;
-  width: 80%;
-}
-.weeks-featured p {
-  margin: 0 1em;
-  font-size: calc(1.5rem + 4vw); /* Default font size */
-  white-space: nowrap;
-  text-align: center;
-}
-
 #games-container, #featured-container {
   flex-wrap: wrap;
   justify-content: center;
@@ -2586,8 +2572,8 @@ a:hover {
   }
   .cart .buy-games__left a, .cart .wl-left a, .cart .wl-right a, .wishlist .buy-games__left a, .wishlist .wl-left a, .wishlist .wl-right a {
     display: flex;
-    padding: 4px;
     width: 100%;
+    padding: 4px;
     background-color: var(--color-black);
     color: var(--color-yellow-logo);
     border: var(--border-1px-yellow);
@@ -2605,7 +2591,6 @@ a:hover {
   .cart .wl-left a, .wishlist .wl-left a {
     justify-content: center;
   }
-  /* PSN-GRID */
 }
 /* @media screensize over 1080px */
 @media screen and (min-width: 1081px) {

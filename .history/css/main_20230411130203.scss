@@ -51,6 +51,7 @@
 
   .h4 {
     color: var(--color-white);
+    // padding: 0.5em 0;
   }
 
   h5, .h5 {
@@ -214,6 +215,33 @@ footer a {
   animation-direction: normal;
 }
 
+// /* CSS code */
+// #ham-burger, #top-burger {
+//   display: none;
+// }
+
+// .menu-flyin {
+//   display: none;
+//   /* Add any other styles for the menu here */
+// }
+
+// .menu-flyin.show {
+//   display: block;
+//   animation-name: flyin;
+//   animation-duration: 0.5s;
+//   animation-direction: normal;
+// }
+
+// @keyframes flyin {
+//   0% {
+//     top: -300px;
+//   }
+//   100% {
+//     top: 47px;
+//   }
+// }
+
+
 .header__wrapper {
   margin: 0 auto;
   height: 140px;
@@ -230,6 +258,7 @@ footer a {
   align-items: center;
   margin-top: 1px;
   position: fixed;
+  // right: 15px;
   height: 35px;
   background: var(--color-black);
   border-radius: 0.5em;
@@ -270,6 +299,7 @@ footer a {
   margin-top: 0px;
   align-items: center;
   width: 320px;
+  // max-width: 320px;
   height: 35px;
   border-radius: 0.5em;
   border: 1px solid var(--color-yellow-logo);
@@ -343,7 +373,9 @@ footer a {
 
 /* Main section*/
 main {
+  // padding: 2em;
   background-color: var(--color-black-60);
+
   min-width: 320px;
   max-width: 100%;
   margin: 0;
@@ -457,7 +489,9 @@ input {
 .index_sign-in, .sellgames {
   min-height: 50vh;
   justify-content: center;
+  // width: 100%;
   min-width: 320px;
+  // width: 95vw;
   max-width: 600px;
   text-align: center;
   input{
@@ -473,6 +507,8 @@ input {
   fieldset {
     display: Flex;
     justify-content: center;
+    // width: 320px;
+    // gap: 1em;
     min-width: 320px;
     width: 95vw;
     max-width: 600px;
@@ -486,8 +522,14 @@ input {
   .full_register_wrapper {
     min-width: 320px;
     width: 100%;
+    // max-width: 600px;
+    // align-items: center;
     display: flex;
     flex-direction: column;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    // gap: 1em;
+    // padding-bottom: 1em;
   }
   legend {
     padding: 0 0.5em;
@@ -2411,6 +2453,7 @@ a:hover {
     'navbar navbar navbar'
     'profile__pic profile__name logout'
     'profile__pic search search';
+    // 'profile__pic . .';
     grid-template-columns: 80px 160px 80px;
     grid-template-rows: 45px 35px 30px;
     .topnav__mob {
