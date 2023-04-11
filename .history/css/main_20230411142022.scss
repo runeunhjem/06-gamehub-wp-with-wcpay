@@ -877,7 +877,7 @@ input {
   display: grid;
   grid-template-columns: 200px 1fr;
   padding: 10px;
-  width: 640px;
+  width: 100%;
   min-width: 320px;
   background-color: var(--color-black-90);
   max-width: 95vw;
@@ -902,7 +902,7 @@ input {
   color: var(--color-yellow-logo);
   text-decoration: none;
   align-items: center;
-  // width: 100%;
+  width: 100%;
   justify-content: space-between;
   a {
     display: flex;
@@ -954,7 +954,7 @@ input {
   align-items: center;
   margin: 0 1em 2em 1em;
   min-width: 320px;
-  width: 640px;
+  width: 640px%;
   max-width: 95vw;
   gap: 2em;
 }
@@ -1894,12 +1894,6 @@ legend {
   h1 {
     font-size: 3rem;
     text-align: center;
-  }
-  .buy-games__left {
-    min-width: 320px;
-    width: 95vw;
-    max-width: 640px;
-    gap: 1em;
   }
 }
 .clear-cart, .clear-wishlist{

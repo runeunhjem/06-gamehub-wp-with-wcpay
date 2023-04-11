@@ -902,7 +902,7 @@ input {
   color: var(--color-yellow-logo);
   text-decoration: none;
   align-items: center;
-  // width: 100%;
+  width: 100%;
   justify-content: space-between;
   a {
     display: flex;
@@ -1894,12 +1894,6 @@ legend {
   h1 {
     font-size: 3rem;
     text-align: center;
-  }
-  .buy-games__left {
-    min-width: 320px;
-    width: 95vw;
-    max-width: 640px;
-    gap: 1em;
   }
 }
 .clear-cart, .clear-wishlist{
