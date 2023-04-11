@@ -529,7 +529,7 @@ input {
     color: var(--color-yellow-logo);
     font-size: 1.4rem;
     // text-align: center;
-
+    traslate-x: 50%;
   }
   .signin_form_wrapper, .register_form_wrapper, .sellgames_form_wrapper {
     display: flex;
@@ -858,7 +858,7 @@ input {
 
 /* About Us Page */
 .about-us__content {
-  background-color: var(--color-black-60);
+  background-color: #0003;
   text-align: left;
 }
 
@@ -866,7 +866,7 @@ input {
   display: block;
   justify-content: left;
   padding: 1em;
-  margin: 0 1em;
+  margin-bottom: 1em;
   max-width: 580px;
   border-radius: var(--border-radius-boxes);
 }
@@ -1313,7 +1313,6 @@ legend {
   color: var(--color-yellow-logo);
   font-size: 1.2rem;
   text-align: center;
-  margin: 0 auto;
 }
 
 .creditcard__visa {
@@ -1324,7 +1323,11 @@ legend {
   gap: 1em;
   width: 100%;
 }
-
+// #creditcard__visa {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+// }
 .paynow-button {
   border: 0px;
   margin-top: 1em;
@@ -1483,7 +1486,6 @@ legend {
   display: flex;
   min-width: 350px;
   width: 90vw;
-  max-width: 710px;
   // height: 150px;
   border: 1px solid var(--color-yellow-logo);
   padding: 0.5em 0 0.6em 0;
@@ -1674,7 +1676,7 @@ legend {
 .game-details {
   display: grid;
   justify-content: flex-start;
-  grid-template-columns: 150px 60px 40px 80px;
+  grid-template-columns: 150px 60px 30px 75px;
   // grid-template-columns: 160px 70px 30px 70px;
   // grid-template-columns: 47% 20.58% 8.82% 23.53%;
   // grid-template-rows: 50px 22px 22px 22px 26px 22px 23px 32px 20px;

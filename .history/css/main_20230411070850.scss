@@ -858,7 +858,7 @@ input {
 
 /* About Us Page */
 .about-us__content {
-  background-color: var(--color-black-60);
+  background-color: var(--color-black-90);
   text-align: left;
 }
 
@@ -1674,7 +1674,7 @@ legend {
 .game-details {
   display: grid;
   justify-content: flex-start;
-  grid-template-columns: 150px 60px 40px 80px;
+  grid-template-columns: 150px 60px 30px 75px;
   // grid-template-columns: 160px 70px 30px 70px;
   // grid-template-columns: 47% 20.58% 8.82% 23.53%;
   // grid-template-rows: 50px 22px 22px 22px 26px 22px 23px 32px 20px;

@@ -474,7 +474,6 @@ input {
   padding: 0 0.5em;
   color: var(--color-yellow-logo);
   font-size: 1.4rem;
-  text-align: center;
 }
 .index_sign-in .signin_form_wrapper, .index_sign-in .register_form_wrapper, .index_sign-in .sellgames_form_wrapper, .sellgames .signin_form_wrapper, .sellgames .register_form_wrapper, .sellgames .sellgames_form_wrapper {
   display: flex;
@@ -764,7 +763,7 @@ input {
 
 /* About Us Page */
 .about-us__content {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--color-black-60);
   text-align: left;
 }
 
@@ -772,7 +771,7 @@ input {
   display: block;
   justify-content: left;
   padding: 1em;
-  margin-bottom: 1em;
+  margin: 0 1em;
   max-width: 580px;
   border-radius: var(--border-radius-boxes);
 }
@@ -1019,8 +1018,10 @@ input {
   border-radius: var(--border-radius-boxes);
   color: var(--color-white);
   background-color: var(--color-black-60);
+  text-align: center;
 }
 .contact .contact__wrapper .send-message legend {
+  text-align: center;
   padding: 0 0.5em;
   color: var(--color-yellow-logo);
   font-size: 1.4rem;
@@ -1194,6 +1195,7 @@ legend {
   color: var(--color-yellow-logo);
   font-size: 1.2rem;
   text-align: center;
+  margin: 0 auto;
 }
 
 .creditcard__visa {
@@ -1351,8 +1353,9 @@ legend {
 
 #search-field {
   display: flex;
-  min-width: 300px;
+  min-width: 350px;
   width: 90vw;
+  max-width: 710px;
   border: 1px solid var(--color-yellow-logo);
   padding: 0.5em 0 0.6em 0;
   border-radius: var(--border-radius-boxes);
@@ -1502,7 +1505,7 @@ legend {
 .game-details {
   display: grid;
   justify-content: flex-start;
-  grid-template-columns: 150px 60px 30px 75px;
+  grid-template-columns: 150px 60px 40px 80px;
   grid-template-rows: 50px 40px 24px 26px 40px 26px 33px 32px 15px;
   grid-template-areas: "gametitle gametitle gametitle gametitle" "gamecover releasedate releasedate reldate" "gamecover type typeico typetext" "gamecover region regionico regiontext" "gamecover platform platformico platformtext" "gamecover gsrating gsrating rating" "gamecover readreview readreview togglewishlist" "ourprice number . price" ". checkout . pricebefore" ". . . .";
   align-items: center;
