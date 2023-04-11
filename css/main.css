@@ -1468,12 +1468,37 @@ legend {
 }
 
 #games-container, #featured-container {
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 2em;
   padding: 1em auto;
   gap: 1em;
+}
+
+#specials {
+  max-width: 655px;
+  width: 655px;
+}
+#specials #hide {
+  padding: 4px;
+  width: 180px;
+  margin: 0.5em auto;
+  max-width: 655px;
+  background-color: var(--color-black);
+  color: var(--color-yellow-logo);
+  border: var(--border-1px-yellow);
+  border-radius: var(--border-radius-boxes);
+  cursor: pointer;
+}
+#specials #hide:hover {
+  color: var(--color-black);
+  background-color: var(--color-yellow-logo);
+  border: 1px solid var(--color-black);
+  font-weight: 600;
+}
+
+.hide {
+  display: none;
 }
 
 .container {
@@ -2536,7 +2561,6 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 800px;
     background-color: var(--color-black-60);
     border-radius: var(--border-radius-boxes);
     border: var(--border-1px-yellow);
