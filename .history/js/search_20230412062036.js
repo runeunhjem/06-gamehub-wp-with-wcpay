@@ -28,7 +28,7 @@ setTimeout(() => {
     filteredGames.forEach((game) => {
 
       // Determine which heart icon to display based on isWishlisted
-        let heartIcon = game.isWishlisted === 1 ? "images/ico_heart.svg" : "images/ico_heart_+.svg";
+        let heartIcon = game.isWishlisted) === 1 ? "images/ico_heart.svg" : "images/ico_heart_+.svg";
         // const heartIcon = wishlistedGames.includes(parseInt(game.id)) ? "images/ico_heart.svg" : "images/ico_heart_+.svg";
         const typeIcon = game.type === "Key" ? "images/ico_key.svg" : "images/ico_disc.svg";
         // console.log("game before creating gamesContainer HTML: ", game);
@@ -43,15 +43,13 @@ setTimeout(() => {
               this.classList.toggle("fas");
             });
           });
-        }, 500);
+        }, 1000);
 
       gamesContainer.innerHTML += `
         <div class="container game-cards" data-filter="${game.platform}-${game.type}">
           <div class="items ${game.itemName}">
             <div class="psnleft game-title">
-              <h2 class="h4 type">${game.itemName}</h2><span class="gametitle-info">${game.platformShort} | ${
-        game.type
-      } Version</span>
+              <h2 class="h4 type">${game.itemName}</h2><span class="gametitle-info">${game.platformShort} | ${game.type} Version</span>
             </div>
             <div class="game-cover">
             <a href="details.html?id=${game.id}" class="results-list">
@@ -82,9 +80,7 @@ setTimeout(() => {
             </div>
             <div class="togglewishlist add-to-wishlist">
               <span class="small psnright" href="wishlist.html">
-                <img class="remove small psnright add-to-wishlist wishlist-icon ${
-                  game.isWishlisted === 1 ? "fas" : "far"
-                }" src="${heartIcon}" alt="Add to wishlist" data-id="${parseInt(game.id)}">
+                <img class="remove small psnright add-to-wishlist" src="${heartIcon}" alt="Add to wishlist" data-id="${game.id}">
               </span>
             </div>
             <div class="price psnright">
