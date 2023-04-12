@@ -1466,7 +1466,7 @@ legend {
 }
 
 #specials {
-  max-width: 655px;
+  max-width: 100%;
   width: 655px;
 }
 #specials #hide {
@@ -1489,6 +1489,53 @@ legend {
 
 .hide {
   display: none;
+}
+
+.thumb-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 320px;
+  width: 640px;
+  max-width: 95vw;
+  gap: 1em;
+}
+
+.thumb-grid {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 0 1em 0;
+  gap: 0.6em;
+}
+
+.thumb-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 120px;
+  background-color: var(--color-black-90);
+  border: var(--border-1px-yellow);
+  border-radius: var(--border-radius-boxes);
+  cursor: pointer;
+}
+.thumb-box .thumb-image {
+  width: 60px;
+  height: 70px;
+}
+.thumb-box .thumbTitle {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0.1em auto;
+}
+.thumb-box .thumbInfo {
+  width: 100%;
+}
+.thumb-box .gametitle-info {
+  font-size: 0.6rem;
+  line-height: 1.1rem;
 }
 
 .container {
