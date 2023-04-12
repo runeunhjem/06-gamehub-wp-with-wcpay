@@ -41,6 +41,6 @@ setTimeout(() => {
         hideTumbsContainer.classList.add("hide");
       } else {
         hideThumbs.innerHTML = "Hide Thumbnails";
-        hideTumbsContainer.classList.remove("hide");
+        thumbsContainer.classList.remove("hide");
       }
     });

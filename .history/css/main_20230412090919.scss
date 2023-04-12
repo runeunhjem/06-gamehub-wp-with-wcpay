@@ -1483,9 +1483,7 @@ legend {
   gap: 0.6em;
 }
 #specials {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display:
   max-width: 100%;
   width: 655px;
   #hide, #hide-thumbs {
@@ -1514,7 +1512,6 @@ legend {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 2em;
-  margin: 10px;
 }
 .hide {
   display: none;
@@ -2414,6 +2411,8 @@ a:hover {
   #search-field {
     max-width: 100%
   }
+
+
 }
 
 @media screen and (max-height: 450px) {
@@ -2446,10 +2445,7 @@ a:hover {
   .send-message {
       width: 320px;
   }
-  .hide-buttons {
-    max-width: 90%;
-    width: 320px;
-  }
+
   .header__wrapper {
     display: none;
   }

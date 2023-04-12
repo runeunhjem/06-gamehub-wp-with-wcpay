@@ -1480,19 +1480,15 @@ legend {
 }
 #featured-container {
   margin: 1em auto;
-  gap: 0.6em;
 }
 #specials {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   max-width: 100%;
   width: 655px;
-  #hide, #hide-thumbs {
+  #hide {
     padding: 4px;
-    width: 40%;
-    margin: 0.5em 0;
-    max-width: 100%;
+    width: 180px;
+    margin: 0.5em auto;
+    max-width: 655px;
     background-color: var(--color-black);
     color: var(--color-yellow-logo);
     border: var(--border-1px-yellow);
@@ -1501,30 +1497,21 @@ legend {
   }
   #hide:hover {
     color: var(--color-black);
+
     background-color: var(--color-yellow-logo);
     border: 1px solid var(--color-black);
     font-weight: 600;
   }
-}
-.hide-buttons {
-  min-width: 320px;
-  width: 655px;
-  max-width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2em;
-  margin: 10px;
 }
 .hide {
   display: none;
 }
 
 .thumb-container {
-  // display: flex;
-  // flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   min-width: 320px;
-  width: 740px;
+  width: 640px;
   max-width: 95vw;
   gap: 1em;
 }
@@ -1543,7 +1530,7 @@ legend {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100px;
+  width: 110px;
   height: 120px;
   background-color: var(--color-black-90);
   border: var(--border-1px-yellow);
@@ -1554,15 +1541,17 @@ legend {
     height: 70px;
   }
   .thumbTitle {
-    font-size: 0.9rem;
-    // margin: 0.1em auto;
+    font-size: 1rem;
+    ;
+    margin: 0.1em auto;
   }
   .thumbInfo {
     width: 100%;
+  }
+  .gametitle-info {
     font-size: 0.6rem;
     line-height: 1.1rem;
   }
-
 }
 .container {
   background-color: var(--color-black-90);
@@ -2414,6 +2403,8 @@ a:hover {
   #search-field {
     max-width: 100%
   }
+
+
 }
 
 @media screen and (max-height: 450px) {
@@ -2446,10 +2437,7 @@ a:hover {
   .send-message {
       width: 320px;
   }
-  .hide-buttons {
-    max-width: 90%;
-    width: 320px;
-  }
+
   .header__wrapper {
     display: none;
   }

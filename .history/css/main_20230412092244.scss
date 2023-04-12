@@ -2414,6 +2414,9 @@ a:hover {
   #search-field {
     max-width: 100%
   }
+  .hide-buttons {
+    width: 320px;
+  }
 }
 
 @media screen and (max-height: 450px) {
@@ -2448,7 +2451,6 @@ a:hover {
   }
   .hide-buttons {
     max-width: 90%;
-    width: 320px;
   }
   .header__wrapper {
     display: none;

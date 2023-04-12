@@ -38,9 +38,9 @@ setTimeout(() => {
     hideThumbs.addEventListener("click", function () {
       if (hideThumbs.innerHTML === "Hide Thumbnails") {
         hideThumbs.innerHTML = "Show Thumbnails";
-        hideTumbsContainer.classList.add("hide");
+        thumbsContainer.classList.add("hide");
       } else {
         hideThumbs.innerHTML = "Hide Thumbnails";
-        hideTumbsContainer.classList.remove("hide");
+        thumbsContainer.classList.remove("hide");
       }
     });

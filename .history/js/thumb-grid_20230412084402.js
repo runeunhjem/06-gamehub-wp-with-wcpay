@@ -1,6 +1,5 @@
 import { games } from "./games.js";
 const thumbsContainer = document.getElementById("thumb-grid");
-const hideTumbsContainer = document.getElementById("thumb-container");
 const hideThumbs = document.getElementById("hide-thumbs");
 games.forEach((game) => {
   // Check if the game is in the wishlisted games array
@@ -38,9 +37,9 @@ setTimeout(() => {
     hideThumbs.addEventListener("click", function () {
       if (hideThumbs.innerHTML === "Hide Thumbnails") {
         hideThumbs.innerHTML = "Show Thumbnails";
-        hideTumbsContainer.classList.add("hide");
+        featuredContainer.classList.add("hide");
       } else {
-        hideThumbs.innerHTML = "Hide Thumbnails";
-        hideTumbsContainer.classList.remove("hide");
+        hideThumbs.innerHTML = "Hide Featured";
+        featuredContainer.classList.remove("hide");
       }
     });

@@ -1463,17 +1463,21 @@ legend {
 
 #featured-container {
   margin: 1em auto;
+  gap: 0.6em;
 }
 
 #specials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 100%;
   width: 655px;
 }
-#specials #hide {
+#specials #hide, #specials #hide-thumbs {
   padding: 4px;
-  width: 180px;
-  margin: 0.5em auto;
-  max-width: 655px;
+  width: 40%;
+  margin: 0.5em 0;
+  max-width: 100%;
   background-color: var(--color-black);
   color: var(--color-yellow-logo);
   border: var(--border-1px-yellow);
@@ -1487,15 +1491,24 @@ legend {
   font-weight: 600;
 }
 
+.hide-buttons {
+  min-width: 320px;
+  width: 655px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2em;
+  margin: 10px;
+}
+
 .hide {
   display: none;
 }
 
 .thumb-container {
-  display: flex;
-  flex-wrap: wrap;
   min-width: 320px;
-  width: 640px;
+  width: 740px;
   max-width: 95vw;
   gap: 1em;
 }
@@ -1526,14 +1539,10 @@ legend {
   height: 70px;
 }
 .thumb-box .thumbTitle {
-  font-size: 1rem;
-  font-weight: 400;
-  margin: 0.1em auto;
+  font-size: 0.9rem;
 }
 .thumb-box .thumbInfo {
   width: 100%;
-}
-.thumb-box .gametitle-info {
   font-size: 0.6rem;
   line-height: 1.1rem;
 }
@@ -2447,6 +2456,10 @@ a:hover {
     display: none;
   }
   .send-message {
+    width: 320px;
+  }
+  .hide-buttons {
+    max-width: 90%;
     width: 320px;
   }
   .header__wrapper {
