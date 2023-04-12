@@ -1403,6 +1403,8 @@ legend {
 #choose-sort, #choose-filter {
   display: block;
   max-width: 250px;
+  text-align: left;
+  text-indent: 5px;
 }
 
 .psn-grid {
